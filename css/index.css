@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* /////////////////////////////
+foundation
+//////////////////////////////*/
+@import "foundation/font.css";
+@import "foundation/var.css";
+@import "foundation/reset.css";
+
+/* /////////////////////////////
+layout
+//////////////////////////////*/
+
+@import "layout/common.css";
+@import "layout/header.css";
+
+/* /////////////////////////////
+    base
+//////////////////////////////*/
+
+html {
+    font-size: 10px;
+    font-family: "Noto Sans KR";
+    color: var(--gray-main);
+}
+a {
+    color: var(--gray-main);
+}

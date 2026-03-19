@@ -1,0 +1,216 @@
+header {
+    padding: 0 15px;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* headerLinks */
+header .container nav.headerLinks {
+    margin-top: 25px;
+}
+header .container nav.headerLinks ul.mainMenu {
+    display: flex;
+    justify-content: end;
+}
+header .container nav.headerLinks ul.mainMenu > li {
+    margin-right: 3px;
+}
+header .container nav.headerLinks ul.mainMenu > li.otherMuseum {
+    position: relative;
+    margin-right: 16px;
+}
+header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected {
+    background: var(--gray-darker);
+}
+header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected a {
+    color: var(--white-main);
+}
+header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected img {
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(2%) hue-rotate(190deg) brightness(108%) contrast(100%);
+}
+header .container nav.headerLinks ul.mainMenu > li:last-child {
+    margin-right: 0;
+}
+header .container nav.headerLinks ul.mainMenu > li > a {
+    display: block;
+    color: var(--gray-darker);
+    font-size: var(--text-small);
+    padding: 11px 8px 15px 8px;
+    position: relative;
+    letter-spacing: 0.1px;
+}
+header .container nav.headerLinks ul.mainMenu > li > a::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .container nav.headerLinks ul.mainMenu > li a img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+header .container nav.headerLinks ul.mainMenu > li:nth-of-type(3) a {
+    padding: 11px 5px 15px 8px;
+}
+header .container nav.headerLinks ul.mainMenu > li:nth-of-type(3) a img {
+    transform: rotate(90deg);
+    width: 15px;
+    height: 8px;
+    object-fit: cover;
+}
+
+/* headerLinks_submenu */
+header .container nav.headerLinks ul.subMenu {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease,
+        visibility 0s linear 0.35s;
+    padding-top: 20px;
+    text-align: center;
+    top: 46px;
+    left: 0;
+    z-index: 101;
+    border-top: 1px solid var(--gray-dark);
+    background-color: var(--gray-darker);
+}
+
+header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected ul.subMenu {
+    transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease,
+        visibility 0s linear 0s;
+    max-height: 380px;
+    opacity: 1;
+    visibility: visible;
+}
+header .container nav.headerLinks ul.subMenu li {
+    margin-bottom: 15px;
+}
+header .container nav.headerLinks ul.subMenu li a {
+    color: var(--white-main);
+    font-size: var(--text-small);
+}
+header .container nav.headerLinks ul.subMenu li a:hover {
+    color: var(--yellow-accent);
+    text-decoration: underline;
+}
+header .container nav.headerLinks ul.subMenu li a img {
+}
+
+/* mainNavigation */
+/* logo */
+header .container nav.mainNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    position: relative;
+}
+header .container nav.mainNavigation h1.logo {
+}
+header .container nav.mainNavigation h1.logo img {
+    object-fit: cover;
+}
+
+/* gnbMenu */
+header .container nav.mainNavigation ul.gnbMenu {
+    margin-top: 10px;
+    display: flex;
+    z-index: 210;
+    align-items: center;
+}
+header .container nav.mainNavigation ul.gnbMenu > li {
+    width: 14.5rem;
+}
+header .container nav.mainNavigation ul.gnbMenu > li a {
+    display: block;
+    text-align: center;
+    font-size: var(--text-xxLargeText);
+    color: var(--gray-darkest);
+    font-weight: 500;
+    transition: 0.2s;
+}
+header .container nav.mainNavigation ul.gnbMenu > li a img {
+    position: absolute;
+    top: 100%;
+}
+
+header nav.mainNavigation::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 200;
+    height: 40rem;
+    width: 100%;
+    top: 100%;
+    border-top: 1px solid var(--gray-border);
+    background: var(--white-main);
+}
+/* gnbSubMenu */
+header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu {
+    position: absolute;
+    z-index: 210;
+    width: 15rem;
+    height: 25rem;
+    top: 100%;
+    margin-top: 11px;
+    border-left: 1px solid var(--gray-border);
+    background-color: vqr(--white-main);
+}
+
+header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu li {
+}
+header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu li a {
+    font-size: var(--text-linkText);
+    letter-spacing: -0.8px;
+    word-break: keep-all;
+    color: var(--gray-darkest);
+    line-height: 1.2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: -3px;
+    font-weight: 400;
+}
+header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu li a::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gray-darkest);
+}
+
+/*  headerUtils */
+header .container nav.mainNavigation ul.headerUtils {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+header .container nav.mainNavigation ul.headerUtils > li {
+    position: relative;
+}
+header .container nav.mainNavigation ul.headerUtils li:nth-of-type(2) {
+    margin-right: 12px;
+}
+header .container nav.mainNavigation ul.headerUtils > li a {
+    color: var(--gray-darker);
+    font-size: var(--text-largeText);
+    font-weight: 500;
+    line-height: 1.2;
+}
