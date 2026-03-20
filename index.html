@@ -47,6 +47,7 @@
                             <a href="#"><img src="image/logo_child.png" alt="" /></a>
                         </h1>
 
+                        <div class="gnbBackground"></div>
                         <ul class="gnbMenu">
                             <li>
                                 <a href="#">관람</a>
@@ -100,11 +101,96 @@
                             </li>
                         </ul>
                     </nav>
+                    <!-- mobile Navigation -->
+                    <nav class="mobileNavigation">
+                        <h1 class="logo">
+                            <a href="#"><img src="image/logo_child.png" alt="" /></a>
+                        </h1>
+                        <div class="navBtnBox">
+                            <a href="#" class="searchBtn">
+                                <img src="image/" alt="" />
+                            </a>
+                            <a href="#" class="hamburgerBtn"></a>
+                        </div>
+
+                        <!-- mobile sub Menu -->
+                        <div class="mobileGnb">
+                            <div class="mobileGnbBackground"></div>
+                            <ul class="mobileGnbMenu">
+                                <li>
+                                    <a href="#">관람</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">알려드려요</a></li>
+                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="#">시설안내</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                        <li><a href="#">자주하는질문</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">전시</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">상설 전시</a></li>
+                                        <li><a href="#">온라인 전시</a></li>
+                                        <li><a href="#">지난 전시</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">교육</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">전체프로그램</a></li>
+                                        <li><a href="#">개인</a></li>
+                                        <li><a href="#">단체</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">자료</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">동영상</a></li>
+                                        <li><a href="#">활동지</a></li>
+                                        <li><a href="#">연구자료</a></li>
+                                        <li><a href="#">전시자료</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">소개</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">어린이박물관 소개</a></li>
+                                        <li><a href="#">박물간 상징 소개</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- mobile search screen-->
+                        <div class="searchFormBox">
+                            <div class="searchTop">
+                                <h1 class="searchLogo">
+                                    <img src="image/search_logo.png" alt=" " />
+                                </h1>
+                                <button class="closeSearch">
+                                    <img src="image/btn_white_close.png" alt="검색 닫기 아이콘" />
+                                </button>
+                            </div>
+                            <form action="get" class="searchForm">
+                                <label for="#keywordSearch">검색어</label>
+                                <input type="text" id="keywordSearch" placeholder="검색어를 입력하세요." name="keyword_query" />
+                                <button class="keywordSearchBtn">검색</button>
+                            </form>
+                        </div>
+
+                        <!-- modal -->
+                        <div class="mobileModal">
+                            <img src="image/m_bg_search.png" alt=" " />
+                        </div>
+                    </nav>
                 </div>
             </header>
         </div>
     </body>
 </html>
 
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <!-- JS 자바스크립트 -->
 <script src="js/header.js"></script>
