@@ -48,4 +48,4 @@ const closeMenu = () => {
     $gnbBackground.hide();
 };
 
-$gnbMenu.on("mouseenter", openMenu).on("mouseleave", closeMenu);
+$gnbMenu.add($gnbSubMenu).add($gnbBackground).on("mouseenter", openMenu).on("mouseleave", closeMenu);

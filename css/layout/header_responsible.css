@@ -1,0 +1,14 @@
+@media screen and (max-width: 786px) {
+}
+@media screen and (max-width: 991px) {
+    /* 모바일 버전 display 설정 */
+    .header .container .headerLinks {
+        display: none;
+    }
+    .header .container .mainNavigation {
+        display: none;
+    }
+    .header .mobileNavigation {
+        display: block;
+    }
+}
