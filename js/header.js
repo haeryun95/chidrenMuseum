@@ -27,25 +27,48 @@ const $gnbSubMenu = $(".gnbSubMenu");
 const $gnbBackground = $(".gnbBackground");
 
 $otherMuseum.on("click", function () {
-    $(this).toggleClass("selected");
-    if ($(this).hasClass("selected")) {
-        $otherMuseumSubMenu.slideDown(200);
-    } else {
-        $otherMuseumSubMenu.slideUp(200);
-    }
+  $(this).toggleClass("selected");
+  if ($(this).hasClass("selected")) {
+    $otherMuseumSubMenu.slideDown(200);
+  } else {
+    $otherMuseumSubMenu.slideUp(200);
+  }
 });
 
 const openMenu = () => {
-    $otherMuseum.removeClass("selected");
-    $gnbMenu.addClass("menuOver");
-    $gnbSubMenu.show();
-    $gnbBackground.show();
+  $otherMuseum.removeClass("selected");
+  $gnbMenu.addClass("menuOver");
+  $gnbSubMenu.show();
+  $gnbBackground.show();
 };
 
 const closeMenu = () => {
-    $gnbMenu.removeClass("menuOver");
-    $gnbSubMenu.hide();
-    $gnbBackground.hide();
+  $gnbMenu.removeClass("menuOver");
+  $gnbSubMenu.hide();
+  $gnbBackground.hide();
 };
 
-$gnbMenu.add($gnbSubMenu).add($gnbBackground).on("mouseenter", openMenu).on("mouseleave", closeMenu);
+$gnbMenu
+  .add($gnbSubMenu)
+  .add($gnbBackground)
+  .on("mouseenter", openMenu)
+  .on("mouseleave", closeMenu);
+
+// search form area
+const $searchFormOpenBnt = $(".searchBtn");
+const $searchFormArea = $(".searchFormBox");
+const $searchFormModal = $(".mobileModal");
+const $searchFormCloseBnt = $(".closeSearch");
+
+const openSearchArea = () => {
+  $searchFormModal.show();
+  $searchFormArea.show();
+};
+
+const closeSearchArea = () => {
+  $searchFormModal.hide();
+  $searchFormArea.hide();
+};
+
+$searchFormOpenBnt.on("click", openSearchArea);
+$searchFormCloseBnt.on("click", closeSearchArea);

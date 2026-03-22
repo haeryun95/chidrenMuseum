@@ -1,62 +1,66 @@
 :root {
-    /* =========================
+  /* =========================
        color
     ========================= */
-    --blue-100: #0073bc;
-    --blue-200: #006cb8;
-    --blue-300: #3f0b9f;
+  --blue-100: #0073bc;
+  --blue-200: #006cb8;
+  --blue-300: #3f0b9f;
 
-    --blue-main: var(--blue-100);
-    --blue-secondary: var(--blue-200);
-    --blue-accent: var(--blue-300);
+  --blue-main: var(--blue-100);
+  --blue-secondary: var(--blue-200);
+  --blue-accent: var(--blue-300);
 
-    --white-100: #fff;
-    --white-main: var(--white-100);
+  --white-100: #fff;
+  --white-main: var(--white-100);
 
-    --yellow-100: #ffcc33;
-    --yellow-accent: var(--yellow-100);
+  --yellow-100: #ffcc33;
+  --yellow-accent: var(--yellow-100);
 
-    --gray-50: #eaeaea;
-    --gray-100: #ccc;
-    --gray-200: #666;
-    --gray-300: #555;
-    --gray-400: #444;
-    --gray-500: #222;
+  --gray-50: #eaeaea;
+  --gray-100: #ccc;
+  --gray-200: #666;
+  --gray-300: #555;
+  --gray-400: #444;
+  --gray-500: #222;
 
-    --gray-border: var(--gray-50);
-    --gray-light: var(--gray-100);
-    --gray-main: var(--gray-200);
-    --gray-dark: var(--gray-300);
-    --gray-darker: var(--gray-400);
-    --gray-darkest: var(--gray-500);
+  --gray-border: var(--gray-50);
+  --gray-light: var(--gray-100);
+  --gray-main: var(--gray-200);
+  --gray-dark: var(--gray-300);
+  --gray-darker: var(--gray-400);
+  --gray-darkest: var(--gray-500);
 
-    --black: #000;
-    /* =========================
+  --black: #000;
+  /* =========================
        font-size
     ========================= */
 
-    /* scale */
-    --fs-100: 1.2rem;
-    --fs-200: 1.3rem;
-    --fs-300: 1.4rem;
-    --fs-400: 1.5rem;
-    --fs-450: 1.55rem;
-    --fs-500: 1.7rem;
-    --fs-600: 2rem;
-    --fs-700: 2.3rem;
-    --fs-750: 2.4rem;
-    --fs-800: 3.2rem;
+  /* scale */
+  --fs-100: 1.2rem;
+  --fs-200: 1.3rem;
+  --fs-300: 1.4rem;
+  --fs-400: 1.5rem;
+  --fs-450: 1.55rem;
+  --fs-500: 1.7rem;
+  --fs-600: 2rem;
+  --fs-700: 2.3rem;
+  --fs-750: 2.4rem;
+  --fs-780: 3rem;
+  --fs-800: 3.2rem;
+  --fs-830: 3.5rem;
 
-    --fs-17vw: 1.7vw;
+  --fs-17vw: 1.7vw;
 
-    /* semantic */
-    --text-caption: var(--fs-100);
-    --text-small: var(--fs-300);
-    --text-body: var(--fs-400);
-    --text-linkText: var(--fs-450);
-    --text-largeText: var(--fs-500);
-    --text-subtitle: var(--fs-600);
-    --text-xxLargeText: var(--fs-700);
-    --text-bntLarge: var(--fs-750);
-    --text-title: var(--fs-800);
+  /* semantic */
+  --text-caption: var(--fs-100);
+  --text-small: var(--fs-300);
+  --text-body: var(--fs-400);
+  --text-linkText: var(--fs-450);
+  --text-largeText: var(--fs-500);
+  --text-subtitle: var(--fs-600);
+  --text-xxLargeText: var(--fs-700);
+  --text-bntLarge: var(--fs-750);
+  --text-placeholder: var(--fs-780);
+  --text-title: var(--fs-800);
+  --text-xxxLarge: var(--fs-830);
 }

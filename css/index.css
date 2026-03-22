@@ -12,18 +12,21 @@ layout
 //////////////////////////////*/
 
 @import "layout/common.css";
+
 @import "layout/header.css";
 @import "layout/header_responsible.css";
+
+@import "layout/mainVisualSection.css";
 
 /* /////////////////////////////
     base
 //////////////////////////////*/
 
 html {
-    font-size: 10px;
-    font-family: "Noto Sans KR";
-    color: var(--gray-main);
+  font-size: 10px;
+  font-family: "Noto Sans KR";
+  color: var(--gray-main);
 }
 a {
-    color: var(--gray-main);
+  color: var(--gray-main);
 }

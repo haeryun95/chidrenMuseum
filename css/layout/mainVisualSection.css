@@ -1,0 +1,159 @@
+/* =========================
+   main visual slider
+========================= */
+.mainVisual {
+  position: relative;
+  width: 100%;
+  background: #f5f5f5;
+}
+
+.mainVisualSlider {
+  position: relative;
+  width: 100%;
+  max-width: 1760px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mainVisualSlider .swiper-slide {
+  position: relative;
+}
+
+.mainVisualSlider .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mainVisualSlider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* =========================
+   navigation button
+========================= */
+.mainVisualPrev,
+.mainVisualNext {
+  width: 56px;
+  height: 56px;
+  margin-top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 0;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.mainVisualPrev::after,
+.mainVisualNext::after {
+  display: none;
+}
+
+.mainVisualPrev {
+  left: 24px;
+  background-image: url("../../image/main_visual_prev.png");
+}
+
+.mainVisualNext {
+  right: 24px;
+  background-image: url("../../image/main_visual_next.png");
+}
+
+/* =========================
+   pagination
+========================= */
+.mainVisualPagination {
+  position: absolute;
+  left: 50%;
+  bottom: 24px !important;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.mainVisualPagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  margin: 0 !important;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 1;
+  border: 2px solid #d9d9d9;
+  transition: 0.3s;
+}
+
+.mainVisualPagination .swiper-pagination-bullet-active {
+  background: #4c22d9;
+  border-color: #4c22d9;
+}
+
+/* =========================
+   responsive
+========================= */
+@media (max-width: 1200px) {
+  .mainVisual {
+  }
+
+  .mainVisualPrev,
+  .mainVisualNext {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mainVisualPrev {
+    left: 16px;
+  }
+
+  .mainVisualNext {
+    right: 16px;
+  }
+
+  .mainVisualPagination {
+    bottom: 18px !important;
+    gap: 10px;
+  }
+
+  .mainVisualPagination .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainVisual {
+    padding-top: 80px;
+  }
+
+  .mainVisualPrev,
+  .mainVisualNext {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mainVisualPrev {
+    left: 12px;
+  }
+
+  .mainVisualNext {
+    right: 12px;
+  }
+
+  .mainVisualPagination {
+    bottom: 14px !important;
+    gap: 8px;
+  }
+
+  .mainVisualPagination .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+}
