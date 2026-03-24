@@ -1,106 +1,96 @@
 header {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 header .container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /* headerLinks */
 header .container nav.headerLinks {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 header .container nav.headerLinks ul.mainMenu {
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 header .container nav.headerLinks ul.mainMenu > li {
-  margin-right: 3px;
+    margin-right: 3px;
 }
 header .container nav.headerLinks ul.mainMenu > li.otherMuseum {
-  position: relative;
-  margin-right: 16px;
+    position: relative;
+    margin-right: 16px;
 }
 header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected {
-  background: var(--black);
+    background: var(--black);
 }
 header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected a {
-  color: var(--white-main);
+    color: var(--white-main);
 }
-header
-  .container
-  nav.headerLinks
-  ul.mainMenu
-  > li.otherMuseum.selected
-  ul
-  a:hover {
-  color: var(--yellow-accent);
-  text-decoration: underline;
+header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected ul a:hover {
+    color: var(--yellow-accent);
+    text-decoration: underline;
 }
 header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected img {
-  transform: rotate(180deg);
-  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(2%)
-    hue-rotate(190deg) brightness(108%) contrast(100%);
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(2%) hue-rotate(190deg) brightness(108%) contrast(100%);
 }
 header .container nav.headerLinks ul.mainMenu > li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 header .container nav.headerLinks ul.mainMenu > li > a {
-  display: block;
-  color: var(--gray-darker);
-  font-size: var(--text-small);
-  padding: 11px 8px 15px 8px;
-  position: relative;
-  letter-spacing: 0.1px;
+    display: block;
+    color: var(--gray-darker);
+    font-size: var(--text-small);
+    padding: 11px 8px 15px 8px;
+    position: relative;
+    letter-spacing: 0.1px;
 }
 header .container nav.headerLinks ul.mainMenu > li > a::before {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 3px;
-  background: var(--black);
-  position: absolute;
-  top: 0;
-  left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 header .container nav.headerLinks ul.mainMenu > li a img {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
 }
 header .container nav.headerLinks ul.mainMenu > li:nth-of-type(3) a {
-  padding: 11px 5px 15px 8px;
+    padding: 11px 5px 15px 8px;
 }
 header .container nav.headerLinks ul.mainMenu > li:nth-of-type(3) a img {
-  transform: rotate(90deg);
-  width: 15px;
-  height: 8px;
-  object-fit: cover;
+    transform: rotate(90deg);
+    width: 15px;
+    height: 8px;
+    object-fit: cover;
 }
 
 /* headerLinks_submenu */
 header .container nav.headerLinks ul.subMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 800;
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--black);
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid var(--gray-dark);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 800;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--black);
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray-dark);
 }
-
-/* header .container nav.headerLinks ul.mainMenu > li.otherMuseum.selected ul.subMenu {
-} */
 header .container nav.headerLinks ul.subMenu li {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 header .container nav.headerLinks ul.subMenu li a {
-  color: var(--white-main);
-  font-size: var(--text-small);
+    color: var(--white-main);
+    font-size: var(--text-small);
 }
 header .container nav.headerLinks ul.subMenu li a img {
 }
@@ -108,136 +98,140 @@ header .container nav.headerLinks ul.subMenu li a img {
 /* mainNavigation */
 /* logo */
 header .container nav.mainNavigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 110px;
-  position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    position: relative;
 }
 header .container nav.mainNavigation h1.logo {
 }
 header .container nav.mainNavigation h1.logo img {
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* gnbMenu */
 header .container nav.mainNavigation ul.gnbMenu {
-  display: flex;
-  z-index: 210;
-  align-items: center;
-  height: 100%;
+    display: flex;
+    z-index: 210;
+    align-items: center;
+    height: 100%;
+    padding-top: 10px;
 }
 header .container nav.mainNavigation ul.gnbMenu > li {
-  width: 14.5rem;
-  height: 100%;
-  padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 14.5rem;
+    height: 100%;
 }
 header .container nav.mainNavigation ul.gnbMenu > li a {
-  display: block;
-  text-align: center;
-  font-size: var(--text-xxLargeText);
-  color: var(--gray-darkest);
-  font-weight: 500;
-  width: 100%;
-  height: 100%;
-  line-height: 1;
-  display: flex;
-  align-items: center;
+    text-align: center;
+    font-size: var(--text-xxLargeText);
+    color: var(--gray-darkest);
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header .container nav.mainNavigation ul.gnbMenu > li a img {
-  position: absolute;
-  top: 100%;
+    position: absolute;
+    top: 100%;
 }
 
 header nav.mainNavigation .gnbBackground {
-  display: none;
-  position: absolute;
-  z-index: 200;
-  height: 20rem;
-  width: 100%;
-  top: 100%;
-  border-top: 1px solid var(--gray-border);
-  background: var(--white-main);
+    display: none;
+    position: absolute;
+    z-index: 200;
+    height: 26rem;
+    width: 100%;
+    top: 100%;
+    border-top: 1px solid var(--gray-border);
+    background: var(--white-main);
 }
 
 /* gnbSubMenu */
 header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu {
-  display: none;
-  height: 20rem;
-  position: absolute;
-  z-index: 211;
-  width: 15rem;
-  top: 100%;
-  margin-top: 11px;
-  border-left: 1px solid var(--gray-border);
+    display: none;
+    height: 20rem;
+    position: absolute;
+    z-index: 211;
+    width: 15rem;
+    top: 100%;
+    margin-top: 11px;
+    border-left: 1px solid var(--gray-border);
 }
 header nav.mainNavigation ul.gnbMenu.menuOver .gnbBackground {
-  position: absolute;
-  z-index: 210;
-  width: 100%;
-  background-color: var(--white-main);
+    position: absolute;
+    z-index: 210;
+    width: 100%;
+    background-color: var(--white-main);
 }
 
 header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu li {
-  padding: 10px;
+    padding: 10px;
 }
 header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu li a {
-  font-size: var(--text-linkText);
-  color: var(--gray-darkest);
-  letter-spacing: -0.8px;
-  word-break: keep-all;
-  line-height: 1.2;
-  font-weight: 500;
-  text-align: left;
-  position: relative;
-  display: inline-block;
+    font-size: var(--text-linkText);
+    color: var(--gray-darkest);
+    letter-spacing: -0.8px;
+    word-break: keep-all;
+    line-height: 1.2;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    display: inline-block;
 }
 header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu li a::before {
-  content: "";
-  position: absolute;
-  left: -13px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: var(--gray-darkest);
-  opacity: 0;
+    content: "";
+    position: absolute;
+    left: -13px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--gray-darkest);
+    opacity: 0;
 }
 
 header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu li:hover > a {
-  font-weight: 600;
+    font-weight: 600;
 }
 header nav.mainNavigation ul.gnbMenu ul.gnbSubMenu li:hover > a::before {
-  opacity: 1;
+    opacity: 1;
 }
 
 /*  headerUtils */
 header .container nav.mainNavigation ul.headerUtils {
-  margin-top: 13px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 header .container nav.mainNavigation ul.headerUtils > li {
-  position: relative;
+    position: relative;
 }
 header .container nav.mainNavigation ul.headerUtils li:nth-of-type(2) {
-  margin-right: 12px;
+    margin-right: 12px;
 }
 header .container nav.mainNavigation ul.headerUtils > li a {
-  color: var(--gray-darker);
-  font-size: var(--text-largeText);
-  font-weight: 500;
-  line-height: 1.2;
+    color: var(--gray-darker);
+    font-size: var(--text-largeText);
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 /* mobile Navigation */
 header .container nav.mobileNavigation {
-  display: none;
+    display: none;
 }
 .mobileGnb {
-  width: 100%;
+    width: 100%;
 }
 .mobileGnb .mobileGnbBackground {
 }
@@ -256,90 +250,95 @@ header .container nav.mobileNavigation {
 
 /* searchFormBox */
 .searchFormBox {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 900;
-  top: 0;
-  left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+}
+.searchFormBox .innerSearchFormBox {
+    width: 100%;
+    max-width: 144rem;
+    margin: 0 auto;
+    position: relative;
 }
 .searchFormBox .searchTop {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  z-index: 902;
-  width: 100%;
-  padding: 7rem 2rem 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 902;
+    width: 100%;
+    padding: 7rem 2rem 0;
 }
 .searchFormBox .searchTop h1 {
-  width: 22.7rem;
+    width: 22.7rem;
 }
 .searchFormBox .searchTop h1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .searchFormBox .searchTop button {
-  margin-top: 2rem;
-  width: 3.1rem;
-  height: 3.1rem;
+    margin-top: 2rem;
+    width: 3.1rem;
+    height: 3.1rem;
 }
 .searchFormBox .searchTop button img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .searchFormBox .searchForm {
-  position: relative;
-  padding-top: 340px;
-  width: 625px;
-  margin: 0 auto;
-  z-index: 902;
+    position: relative;
+    padding-top: 340px;
+    width: 625px;
+    margin: 0 auto;
+    z-index: 902;
 }
 .searchFormBox .searchForm label {
-  display: none;
+    display: none;
 }
 .searchFormBox .searchForm input {
-  display: block;
-  outline: none;
-  background: var(--white-main);
-  color: var(--gray-darker);
-  box-sizing: border-box;
-  font-weight: 400;
-  height: 7rem;
-  width: 593.75px;
-  padding: 2.5rem 3rem;
-  font-size: var(--text-subtitle);
-  line-height: 5rem;
-  border: 0;
+    display: block;
+    outline: none;
+    background: var(--white-main);
+    color: var(--gray-darker);
+    box-sizing: border-box;
+    font-weight: 400;
+    height: 7rem;
+    width: 593.75px;
+    padding: 2.5rem 3rem;
+    font-size: var(--text-subtitle);
+    line-height: 5rem;
+    border: 0;
 }
-
 .searchFormBox .searchForm button {
-  position: absolute;
-  background: var(--blue-accent);
-  color: var(--white-main);
-  font-size: var(--text-bntLarge);
-  width: 12rem;
-  height: 7rem;
-  line-height: 7rem;
-  margin: 0;
-  padding: 0;
-  bottom: 0;
-  right: -90px;
+    position: absolute;
+    background: var(--blue-accent);
+    color: var(--white-main);
+    font-size: var(--text-bntLarge);
+    width: 12rem;
+    height: 7rem;
+    line-height: 7rem;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    right: -90px;
 }
 
 .searchFormBox .mobileModal {
-  position: absolute;
-  z-index: 901;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: fixed;
+    z-index: 901;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .searchFormBox .mobileModal img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

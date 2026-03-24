@@ -18,15 +18,17 @@ layout
 
 @import "layout/mainVisualSection.css";
 
+@import "layout/mainReserveSection.css";
+
 /* /////////////////////////////
     base
 //////////////////////////////*/
 
 html {
-  font-size: 10px;
-  font-family: "Noto Sans KR";
-  color: var(--gray-main);
+    font-size: 10px;
+    font-family: "Noto Sans KR";
+    color: var(--gray-main);
 }
 a {
-  color: var(--gray-main);
+    color: var(--gray-main);
 }

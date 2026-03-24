@@ -1,128 +1,60 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>어린이 박물관</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>어린이 박물관</title>
+        <!-- Favicon 파비콘 -->
+        <link rel="shortcut icon" href="/image/favicon.png" />
+        <!-- swiper css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+        <!-- CSS 스타일파일 -->
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
 
-    <!-- Favicon 파비콘 -->
-    <link rel="shortcut icon" href="/image/favicon.png" />
-    <!-- swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <!-- CSS 스타일파일 -->
-    <link rel="stylesheet" href="css/index.css" />
-</head>
+    <body>
+        <div class="wrapper">
+            <!-- HEADER -->
+            <header class="header">
+                <div class="container">
+                    <nav class="headerLinks" nav aria-label="외부 링크 네비게이션">
+                        <ul class="mainMenu">
+                            <li><a href="#">국립중앙박물관</a></li>
+                            <li class="otherMuseum">
+                                <a href="#"
+                                    >소속박물관 어린이박물관 바로가기
+                                    <img src="image/ico_sm_black_open.png" alt="" />
+                                </a>
+                                <ul class="subMenu">
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립경주박물관</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">English <img src="image/ico_lg_black_open.png" alt=" " /></a>
+                            </li>
+                            <li><a href="#">누리집 소통망(SNS)</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="mainNavigation" nav aria-label="메인 메뉴 네비게이션">
+                        <h1 class="logo">
+                            <a href="#"><img src="image/logo_child.png" alt="" /></a>
+                        </h1>
 
-<body>
-    <div class="wrapper">
-        <!-- HEADER -->
-        <header class="header">
-            <div class="container">
-                <nav class="headerLinks" nav aria-label="외부 링크 네비게이션">
-                    <ul class="mainMenu">
-                        <li><a href="#">국립중앙박물관</a></li>
-                        <li class="otherMuseum">
-                            <a href="#">소속박물관 어린이박물관 바로가기
-                                <img src="image/ico_sm_black_open.png" alt="" />
-                            </a>
-                            <ul class="subMenu">
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                                <li><a href="#">국립경주박물관</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">English <img src="image/ico_lg_black_open.png" alt=" " /></a>
-                        </li>
-                        <li><a href="#">누리집 소통망(SNS)</a></li>
-                    </ul>
-                </nav>
-                <nav class="mainNavigation" nav aria-label="메인 메뉴 네비게이션">
-                    <h1 class="logo">
-                        <a href="#"><img src="image/logo_child.png" alt="" /></a>
-                    </h1>
-
-                    <div class="gnbBackground"></div>
-                    <ul class="gnbMenu">
-                        <li>
-                            <a href="#">관람</a>
-                            <ul class="gnbSubMenu">
-                                <li><a href="#">알려드려요</a></li>
-                                <li><a href="#">이용안내</a></li>
-                                <li><a href="#">시설안내</a></li>
-                                <li><a href="#">오시는길</a></li>
-                                <li><a href="#">자주하는질문</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">전시</a>
-                            <ul class="gnbSubMenu">
-                                <li><a href="#">상설 전시</a></li>
-                                <li><a href="#">온라인 전시</a></li>
-                                <li><a href="#">지난 전시</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">교육</a>
-                            <ul class="gnbSubMenu">
-                                <li><a href="#">전체프로그램</a></li>
-                                <li><a href="#">개인</a></li>
-                                <li><a href="#">단체</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">자료</a>
-                            <ul class="gnbSubMenu">
-                                <li><a href="#">동영상</a></li>
-                                <li><a href="#">활동지</a></li>
-                                <li><a href="#">연구자료</a></li>
-                                <li><a href="#">전시자료</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">소개</a>
-                            <ul class="gnbSubMenu">
-                                <li><a href="#">어린이박물관 소개</a></li>
-                                <li><a href="#">박물간 상징 소개</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul class="headerUtils">
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">회원가입</a></li>
-                        <li>
-                            <a href="#" class="searchBtn"><img src="image/btn_search_open.png" alt="search" /></a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- mobile Navigation -->
-                <nav class="mobileNavigation">
-                    <h1 class="logo">
-                        <a href="#"><img src="image/logo_child.png" alt="" /></a>
-                    </h1>
-                    <div class="navBtnBox">
-                        <a href="#" class="searchBtn">
-                            <img src="image/" alt="" />
-                        </a>
-                        <a href="#" class="hamburgerBtn"></a>
-                    </div>
-
-                    <!-- mobile sub Menu -->
-                    <div class="mobileGnb">
-                        <div class="mobileGnbBackground"></div>
-                        <ul class="mobileGnbMenu">
+                        <div class="gnbBackground"></div>
+                        <ul class="gnbMenu">
                             <li>
                                 <a href="#">관람</a>
-                                <ul class="mobileGnbSubMenu">
+                                <ul class="gnbSubMenu">
                                     <li><a href="#">알려드려요</a></li>
                                     <li><a href="#">이용안내</a></li>
                                     <li><a href="#">시설안내</a></li>
@@ -132,7 +64,7 @@
                             </li>
                             <li>
                                 <a href="#">전시</a>
-                                <ul class="mobileGnbSubMenu">
+                                <ul class="gnbSubMenu">
                                     <li><a href="#">상설 전시</a></li>
                                     <li><a href="#">온라인 전시</a></li>
                                     <li><a href="#">지난 전시</a></li>
@@ -140,7 +72,7 @@
                             </li>
                             <li>
                                 <a href="#">교육</a>
-                                <ul class="mobileGnbSubMenu">
+                                <ul class="gnbSubMenu">
                                     <li><a href="#">전체프로그램</a></li>
                                     <li><a href="#">개인</a></li>
                                     <li><a href="#">단체</a></li>
@@ -148,7 +80,7 @@
                             </li>
                             <li>
                                 <a href="#">자료</a>
-                                <ul class="mobileGnbSubMenu">
+                                <ul class="gnbSubMenu">
                                     <li><a href="#">동영상</a></li>
                                     <li><a href="#">활동지</a></li>
                                     <li><a href="#">연구자료</a></li>
@@ -157,83 +89,268 @@
                             </li>
                             <li>
                                 <a href="#">소개</a>
-                                <ul class="mobileGnbSubMenu">
+                                <ul class="gnbSubMenu">
                                     <li><a href="#">어린이박물관 소개</a></li>
                                     <li><a href="#">박물간 상징 소개</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </div>
 
-                    <!-- mobile search screen-->
+                        <ul class="headerUtils">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li>
+                                <a href="#"><img class="searchBtn" src="image/btn_search_open.png" alt="search" /></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- mobile Navigation -->
+                    <nav class="mobileNavigation">
+                        <h1 class="logo">
+                            <a href="#"><img src="image/logo_child.png" alt="" /></a>
+                        </h1>
+                        <div class="navBtnBox">
+                            <a href="#" class="searchBtn">
+                                <img src="image/" alt="" />
+                            </a>
+                            <a href="#" class="hamburgerBtn"></a>
+                        </div>
+
+                        <!-- mobile sub Menu -->
+                        <div class="mobileGnb">
+                            <div class="mobileGnbBackground"></div>
+                            <ul class="mobileGnbMenu">
+                                <li>
+                                    <a href="#">관람</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">알려드려요</a></li>
+                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="#">시설안내</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                        <li><a href="#">자주하는질문</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">전시</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">상설 전시</a></li>
+                                        <li><a href="#">온라인 전시</a></li>
+                                        <li><a href="#">지난 전시</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">교육</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">전체프로그램</a></li>
+                                        <li><a href="#">개인</a></li>
+                                        <li><a href="#">단체</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">자료</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">동영상</a></li>
+                                        <li><a href="#">활동지</a></li>
+                                        <li><a href="#">연구자료</a></li>
+                                        <li><a href="#">전시자료</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">소개</a>
+                                    <ul class="mobileGnbSubMenu">
+                                        <li><a href="#">어린이박물관 소개</a></li>
+                                        <li><a href="#">박물간 상징 소개</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- search screen-->
                     <div class="searchFormBox">
-                        <div class="searchTop">
-                            <h1 class="searchLogo">
-                                <img src="image/search_logo.png" alt=" " />
-                            </h1>
-                            <button class="closeSearch">
-                                <img src="image/btn_white_close.png" alt="검색 닫기 아이콘" />
+                        <div class="innerSearchFormBox">
+                            <div class="searchTop">
+                                <h1 class="searchLogo">
+                                    <img src="image/search_logo.png" alt=" " />
+                                </h1>
+                                <button class="closeSearch">
+                                    <img src="image/btn_white_close.png" alt="검색 닫기 아이콘" />
+                                </button>
+                            </div>
+                            <form action="get" class="searchForm">
+                                <label for="#keywordSearch">검색어</label>
+                                <input type="text" id="keywordSearch" placeholder="검색어를 입력하세요." name="keyword_query" />
+                                <button class="keywordSearchBtn">검색</button>
+                            </form>
+                            <!-- modal -->
+                            <div class="mobileModal">
+                                <img src="image/m_bg_search.png" alt=" " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER END-->
+
+            <!-- MAIN -->
+
+            <main>
+                <!-- ----------------VISUAL------------------ -->
+                <section class="mainVisual">
+                    <div class="container">
+                        <div class="swiper mainVisualSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="image/650778.jpg" alt="문화유산의 마을 전시 배너" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="image/1017286.jpg" alt="어린이박물관 특별전 배너" />
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="image/2351272.jpg" alt="국립중앙박물관 교육 프로그램 배너" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- navigation -->
+                            <button class="swiper-button-prev mainVisualPrev" type="button" aria-label="이전 슬라이드"></button>
+                            <button class="swiper-button-next mainVisualNext" type="button" aria-label="다음 슬라이드"></button>
+
+                            <!-- pagination -->
+                            <div class="controlBox">
+                                <div class="swiper-pagination mainVisualPagination">
+                                    <a href="javascript:void(0);" class="swiper-pagination-bullet">1</a>
+                                    <a href="javascript:void(0);" class="swiper-pagination-bullet">2</a>
+                                    <a href="javascript:void(0);" class="swiper-pagination-bullet">3</a>
+                                </div>
+                                <button class="swiper-btn-ctrl pauseBtn"><span class="blind"> 메인비주얼 정지 </span></button>
+                                <button class="swiper-btn-ctrl playBtn"><span class="blind"> 메인비주얼 정지 </span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- -------------VISUAL END------------------ -->
+                <section class="mainReserve">
+                    <div class="container">
+                        <div class="reserveTop">
+                            <ul class="reserveInfo">
+                                <li class="clockIcon">
+                                    <div class="iconFrame">
+                                        <img src="/image/ico_main_cont_01.png" alt=" " />
+                                    </div>
+                                    <strong>관람시간</strong>
+                                </li>
+                                <li>
+                                    <b>09:30~17:20</b>
+                                    <span>(하루 총 5회 관람)</span>
+                                </li>
+                                <li class="ticketIcon">
+                                    <div class="iconFrame">
+                                        <img src="image/ico_main_cont_02.png" alt=" " />
+                                    </div>
+                                    <strong>관람료</strong>
+                                    <b>무료</b>
+                                </li>
+                            </ul>
+                            <button class="infoLink">
+                                <span>오시는 길</span>
+                                <div>
+                                    <img src="/image/ico_main_arrow_01.png" alt="" />
+                                </div>
                             </button>
                         </div>
-                        <form action="get" class="searchForm">
-                            <label for="#keywordSearch">검색어</label>
-                            <input type="text" id="keywordSearch" placeholder="검색어를 입력하세요." name="keyword_query" />
-                            <button class="keywordSearchBtn">검색</button>
-                        </form>
-                        <!-- modal -->
-                        <div class="mobileModal">
-                            <img src="image/m_bg_search.png" alt=" " />
+                        <div class="reserveBottom">
+                            <div class="reserveSchedule">
+                                <ul>
+                                    <li class="subTitle"></li>
+                                    <li>
+                                        <div class="roundNum">1회차</div>
+                                        <div class="roundTime">09:30 ~ 10:50</div>
+                                        <div class="roundRemaining">접수마감</div>
+                                        <div class="roundRemainingState reserveOff">
+                                            <div class="stateIcon">
+                                                <img src="/image/ico_reserve_off.png" alt=" " />
+                                                <span>접수마감</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="roundNum">2회차</div>
+                                        <div class="roundTime">11:00 ~ 12:20</div>
+                                        <div class="roundRemaining">접수마감</div>
+                                        <div class="roundRemainingState reserveOff">
+                                            <div class="stateIcon">
+                                                <img src="/image/ico_reserve_off.png" alt=" " />
+                                                <span>접수마감</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="roundNum">3회차</div>
+                                        <div class="roundTime">13:00 ~ 14:20</div>
+                                        <div class="roundRemaining">273명</div>
+                                        <div class="roundRemainingState reserveOn">
+                                            <div class="stateIcon">
+                                                <img src="/image/ico_reserve_on.png" alt=" " />
+                                                <span>예약중</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="roundNum">4회차</div>
+                                        <div class="roundTime">14:30 ~ 15:50</div>
+                                        <div class="roundRemaining">292명</div>
+                                        <div class="roundRemainingState reserveOn">
+                                            <div class="stateIcon">
+                                                <img src="/image/ico_reserve_on.png" alt=" " />
+                                                <span>예약중</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="roundNum">5회차</div>
+                                        <div class="roundTime">16:00 ~ 17:20</div>
+                                        <div class="roundRemaining">291명</div>
+                                        <div class="roundRemainingState reserveOn">
+                                            <div class="stateIcon">
+                                                <img src="/image/ico_reserve_on.png" alt=" " />
+                                                <span>예약중</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reserveBox">
+                                <div class="viewingReserve reserveLink">
+                                    <div class="reserveImg">
+                                        <img class="pcReserveImg" src="image/bg_reserve_01.png" alt=" " />
+                                        <img class="mobileReserveImg" src="image/m_bg_eserve_01.png" alt=" " />
+                                    </div>
+                                    <span>관람예약</span>
+                                </div>
+                                <div class="educationReserve reserveLink">
+                                    <div class="reserveImg">
+                                        <img class="pcReserveImg" src="image/bg_reserve_02.png" alt=" " />
+                                        <img class="mobileReserveImg" src="image/m_bg_reserve_02.png" alt=" " />
+                                    </div>
+                                    <span>교육예약</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </nav>
+                </section>
+                <!-- ---------------------------------- -->
+            </main>
 
-            </div>
-        </header>
-        <!-- HEADER END-->
+            <!-- MAIN End-->
 
-        <!-- MAIN -->
-
-        <main>
-            <section class="mainVisual">
-                <div class="swiper mainVisualSlider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="image/650778.jpg" alt="문화유산의 마을 전시 배너" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="image/1017286.jpg" alt="어린이박물관 특별전 배너" />
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="image/2351272.jpg" alt="국립중앙박물관 교육 프로그램 배너" />
-                            </a>
-                        </div>
-                    </div>
-                    <!-- navigation -->
-                    <button class="swiper-button-prev mainVisualPrev" type="button" aria-label="이전 슬라이드"></button>
-                    <button class="swiper-button-next mainVisualNext" type="button" aria-label="다음 슬라이드"></button>
-
-                    <!-- pagination -->
-                    <div class="swiper-pagination mainVisualPagination"></div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- MAIN End-->
-
-
-
-        <!-- FOOTER -->
-        <!-- FOOTER End-->
-
-    </div>
-</body>
-
+            <!-- FOOTER -->
+            <!-- FOOTER End-->
+        </div>
+    </body>
 </html>
 
 <!-- JQuery -->

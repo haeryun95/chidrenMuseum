@@ -1,81 +1,132 @@
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    header .container nav.mainNavigation {
+    }
+    header .container nav.mainNavigation h1.logo {
+        width: 147px;
+    }
+    header .container nav.mainNavigation h1.logo img {
+        width: 100%;
+    }
+
+    /* gnbMenu */
+    header .container nav.mainNavigation ul.gnbMenu {
+        display: flex;
+        z-index: 210;
+        align-items: center;
+        height: 100%;
+    }
+    header .container nav.mainNavigation ul.gnbMenu > li {
+        width: 12.8rem;
+    }
+    header .container nav.mainNavigation ul.gnbMenu > li a {
+        font-size: var(--text-viewport);
+    }
+    header .container nav.mainNavigation ul.gnbMenu > li a img {
+        position: absolute;
+        top: 100%;
+    }
+
+    header nav.mainNavigation .gnbBackground {
+        display: none;
+        position: absolute;
+        z-index: 200;
+        height: 26rem;
+        width: 100%;
+        top: 100%;
+        border-top: 1px solid var(--gray-border);
+        background: var(--white-main);
+    }
+
+    /*  headerUtils */
+    header .container nav.mainNavigation ul.headerUtils {
+        gap: 0;
+    }
+    header .container nav.mainNavigation ul.headerUtils > li {
+    }
+    header .container nav.mainNavigation ul.headerUtils li:nth-of-type(2) {
+        margin: 0 15px 0 16px;
+    }
+    header .container nav.mainNavigation ul.headerUtils > li a {
+    }
+}
 @media screen and (max-width: 991px) {
-  /* 모바일 버전 display 설정 */
-  .header .container .headerLinks {
-    display: none;
-  }
-  .header .container .mainNavigation {
-    display: none;
-  }
-  .header .mobileNavigation {
-    display: block;
-  }
+    /* 모바일 버전 display 설정 */
+    header .container .headerLinks {
+        display: none;
+    }
+    header .container nav.mainNavigation {
+        display: none;
+    }
+    header .container nav.mobileNavigation {
+        display: block;
+    }
 
-  /* search form */
-  .searchFormBox .searchTop {
-    padding: 3rem 4rem 0;
-  }
-  .searchFormBox .searchTop h1 {
-    margin-top: 2rem;
-    width: 22.7rem;
-  }
-  .searchFormBox .searchTop button {
-    margin-top: 0;
-    width: 3.1rem;
-    height: 3.1rem;
-  }
+    /* search form */
+    .searchFormBox .searchTop {
+        padding: 3rem 4rem 0;
+    }
+    .searchFormBox .searchTop h1 {
+        margin-top: 2rem;
+        width: 22.7rem;
+    }
+    .searchFormBox .searchTop button {
+        margin-top: 0;
+        width: 3.1rem;
+        height: 3.1rem;
+    }
 
-  .searchFormBox .searchForm {
-    width: 100%;
-    padding: 34rem 4rem 0 4rem;
-  }
-  .searchFormBox .searchForm input {
-    display: block;
-    padding: 2.5rem 3rem;
-    font-size: var(--text-placeholder);
-    width: calc(100% - 12rem);
-  }
-  .searchFormBox .searchForm button {
-    font-size: var(--text-bntLarge);
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    right: 4rem;
-  }
+    .searchFormBox .searchForm {
+        width: 100%;
+        padding: 34rem 4rem 0 4rem;
+    }
+    .searchFormBox .searchForm input {
+        display: block;
+        padding: 2.5rem 3rem;
+        font-size: var(--text-placeholder);
+        width: calc(100% - 12rem);
+    }
+    .searchFormBox .searchForm button {
+        font-size: var(--text-bntLarge);
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        right: 4rem;
+    }
 }
 
 @media screen and (max-width: 786px) {
-  /* /////////////////////mobile nav /////////////////////*/
+    /* /////////////////////mobile nav /////////////////////*/
 
-  /* search form */
-  .searchFormBox .searchTop {
-    padding: 1.5rem 2rem 0;
-  }
-  .searchFormBox .searchTop h1 {
-    margin-top: 1rem;
-    width: 15rem;
-  }
-  .searchFormBox .searchTop button {
-    width: 2rem;
-    height: 2rem;
-  }
+    /* search form */
+    .searchFormBox .searchTop {
+        padding: 1.5rem 2rem 0;
+    }
+    .searchFormBox .searchTop h1 {
+        margin-top: 1rem;
+        width: 15rem;
+    }
+    .searchFormBox .searchTop button {
+        width: 2rem;
+        height: 2rem;
+    }
 
-  .searchFormBox .searchForm {
-    width: 100%;
-    padding: 17rem 2rem 0 2rem;
-  }
-  .searchFormBox .searchForm input {
-    padding: 0.7rem 1.5rem;
-    font-size: var(--text-body);
-    width: calc(100% - 6rem);
-    line-height: 3.5rem;
-    height: 5rem;
-  }
+    .searchFormBox .searchForm {
+        width: 100%;
+        padding: 17rem 2rem 0 2rem;
+    }
+    .searchFormBox .searchForm input {
+        padding: 0.7rem 1.5rem;
+        font-size: var(--text-body);
+        width: calc(100% - 6rem);
+        line-height: 3.5rem;
+        height: 5rem;
+    }
 
-  .searchFormBox .searchForm button {
-    width: 6rem;
-    height: 5rem;
-    line-height: 5rem;
-    font-size: var(--text-subtitle);
-    right: 2rem;
-  }
+    .searchFormBox .searchForm button {
+        width: 6rem;
+        height: 5rem;
+        line-height: 5rem;
+        font-size: var(--text-subtitle);
+        right: 2rem;
+    }
 }
