@@ -3,115 +3,156 @@
 ////////////////////////////////////////////////////////////*/
 
 .mainReserve {
-    padding: 2rem 0 6.8rem;
-    margin: 0 auto;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: right top 1.2rem;
-    background-image: url(../../image/bg_main_cont_01.png);
-    color: var(--gray-darkest);
+  padding: 2rem 0 6.8rem;
+  margin: 0 auto;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right top 1.2rem;
+  background-image: url(../../image/bg_main_cont_01.png);
+  color: var(--gray-darkest);
 }
 .mainReserve .container {
 }
 
 /* Top */
 .mainReserve .container .reserveTop {
-    border-bottom: 0.3rem solid var(--black);
-    margin-bottom: 3.4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  border-bottom: 0.3rem solid var(--black);
+  margin-bottom: 3.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .mainReserve .container ul.reserveInfo {
-    display: flex;
-    padding: 1.2rem 0 2.3rem 0;
+  display: flex;
+  padding: 1.2rem 0 2.3rem 0;
 }
 .mainReserve .container ul.reserveInfo li {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .mainReserve .container ul.reserveInfo li.clockIcon .iconFrame {
-    width: 2.8rem;
-    height: 2.9rem;
-    margin: 0.3rem 0.9rem 0 0;
+  width: 2.8rem;
+  height: 2.9rem;
+  margin: 0.3rem 0.9rem 0 0;
 }
 .mainReserve .container ul.reserveInfo li.ticketIcon .iconFrame {
-    width: 3.1rem;
-    height: 2.8rem;
-    margin: -0.3rem 0.9rem 0 0;
+  width: 3.1rem;
+  height: 2.8rem;
+  margin: -0.3rem 0.9rem 0 0;
 }
 .mainReserve .container ul.reserveInfo li img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .mainReserve .container ul.reserveInfo li strong {
-    font-size: var(--text-xxLargeText);
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 3rem;
+  font-size: var(--text-xxLargeText);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3rem;
 }
 .mainReserve .container ul.reserveInfo li b {
-    font-size: var(--text-bolder);
-    display: inline-block;
-    vertical-align: middle;
-    letter-spacing: -0.04rem;
-    font-weight: 600;
+  font-size: var(--text-bolder);
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: -0.04rem;
+  font-weight: 600;
 }
 .mainReserve .container ul.reserveInfo li span {
-    font-size: var(--text-bolder);
-    display: inline-block;
-    vertical-align: middle;
-    letter-spacing: -0.04rem;
-    margin: 0 3rem 0 0.2rem;
+  font-size: var(--text-bolder);
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: -0.04rem;
+  margin: 0 3rem 0 0.2rem;
 }
 
 .mainReserve .container button.infoLink {
-    display: flex;
-    width: 11.4rem;
-    margin-top: 1.2rem;
-    padding-bottom: 0.3rem;
-    font-size: var(--text-subtitle);
-    border-bottom: 3px solid var(--black);
-    font-weight: 600;
-    letter-spacing: -0.4px;
-    align-items: center;
+  display: flex;
+  width: 11.4rem;
+  margin-top: 1.2rem;
+  padding-bottom: 0.3rem;
+  font-size: var(--text-subtitle);
+  border-bottom: 3px solid var(--black);
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  align-items: center;
 }
 .mainReserve .container button.infoLink span {
 }
 .mainReserve .container button.infoLink div {
-    width: 3rem;
-    height: 2rem;
-    margin: 0.2rem 0 0 0.6rem;
+  width: 3rem;
+  height: 2rem;
+  margin: 0.2rem 0 0 0.6rem;
 }
 .mainReserve .container button.infoLink div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Bottom */
 .mainReserve .container .reserveBottom {
-    display: flex;
+  display: flex;
+}
+
+.mainReserve .container .reserveBottom .reserveTitle {
+  width: 100%;
+  font-size: var(--text-area-title);
+  text-align: center;
+  padding: 3.2rem 0 1.1rem;
+  letter-spacing: -0.03rem;
+  display: flex;
+  align-items: center;
+}
+.mainReserve .container .reserveBottom .reserveTitle .calenderIcon {
+  width: 2.8rem;
+  height: 2.6rem;
+  margin: 0.5rem 0.8rem 0 0;
+  text-align: center;
+}
+.mainReserve .container .reserveBottom .reserveTitle .calenderIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainReserve .container .reserveBottom .reserveTitle p {
+}
+.mainReserve .container .reserveBottom .reserveTitle p strong {
+  font-weight: 600;
 }
 
 .mainReserve .container .reserveBottom .reserveSchedule {
-    height: 46rem;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    padding: 0 40px;
-    background-repeat: no-repeat;
-    background-position: right bottom -22px;
-    background-image: url(/design/theme/child_kr/images//main/bg_main_cont_02.png);
+  height: 46rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 0 40px;
+  background-repeat: no-repeat;
+  background-position: right bottom -22px;
+  background-image: url(/design/theme/child_kr/images//main/bg_main_cont_02.png);
 }
 .mainReserve .reserveBottom .reserveSchedule ul {
+  display: flex;
+  flex-direction: column;
 }
 .mainReserve .reserveBottom .reserveSchedule ul li.subTitle {
+  padding: 0 0 0.4rem;
+  font-size: var(--text-area-desc);
 }
 .mainReserve .reserveBottom .reserveSchedule ul li {
+  border-bottom: 1px dashed var(--gray-light);
 }
 .mainReserve .reserveBottom .reserveSchedule ul li .roundNum {
+  font-size: var(--text-bolder);
+  position: relative;
+  padding-left: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.03rem;
+}
+.mainReserve .reserveBottom .reserveSchedule ul li .roundNum span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
 }
 .mainReserve .reserveBottom .reserveSchedule ul li .roundTime {
 }
@@ -146,5 +187,5 @@
 .mainReserve .reserveBox .reserveLink .reserveImg .pcReserveImg {
 }
 .mainReserve .reserveBox .reserveLink .reserveImg .mobileReserveImg {
-    display: none;
+  display: none;
 }
