@@ -13,6 +13,7 @@ layout
 @import "layout/common.css";
 /* header */
 @import "layout/header.css";
+
 @import "layout/header_responsible.css";
 
 /* main */
@@ -21,8 +22,11 @@ layout
 @import "layout/mainExhibitSection.css";
 @import "layout/mainNoticeSection.css";
 @import "layout/mainSnsSection.css";
+
 @import "layout/main_responsible.css";
+
 /* footer */
+@import "layout/footer.css";
 
 /* /////////////////////////////
     base

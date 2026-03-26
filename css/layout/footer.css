@@ -1,0 +1,116 @@
+.footer {
+}
+.footer .container {
+}
+
+/* footerMenu */
+.footer .container ul.footerMenu {
+    width: 100vw;
+
+    padding: 1.8rem 0;
+    border: 1px solid var(--gray-light);
+    border-left: none;
+    border-right: none;
+    display: flex;
+}
+.footer .container ul.footerMenu li {
+    display: flex;
+    align-items: center;
+}
+.footer .container ul.footerMenu li:not(li:first-child)::before {
+    content: "";
+    width: 0.1rem;
+    height: 1.6rem;
+    background-color: var(--gray-darker);
+    margin: 0 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer .container ul.footerMenu li a {
+    width: 100%;
+    font-size: var(--text-footerText);
+    line-height: 1.2;
+    color: var(--gray-darker);
+}
+.footer .container ul.footerMenu li a.privacy {
+    font-weight: 600;
+}
+
+/* footerBox */
+
+.footer .container .footerBox {
+    padding: 4rem 0 3.6rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer .container .museumInfoBox {
+}
+.footer .container .museumInfoBox ul.addressArea {
+    display: flex;
+}
+.footer .container .museumInfoBox ul.addressArea li {
+    display: flex;
+    align-items: center;
+    font-size: var(--text-footerText);
+    color: var(--gray-darker);
+    line-height: 1.2;
+    letter-spacing: -0.04rem;
+}
+.footer .container .museumInfoBox ul.addressArea li:not(li:first-child)::before {
+    content: "";
+    width: 0.1rem;
+    height: 1.6rem;
+    background-color: var(--gray-darker);
+    margin: 0 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer .container .museumInfoBox p.copyrightArea {
+    padding-top: 0.7rem;
+    font-size: var(--text-footerText);
+    color: var(--gray-darker);
+    line-height: 1.2;
+    letter-spacing: -0.04rem;
+}
+
+.footer .container .familySiteArea {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer .container .familySiteArea h2.familySiteLog {
+    max-width: 9rem;
+}
+.footer .container .familySiteArea h2.familySiteLog img {
+    width: 100%;
+    object-fit: cover;
+}
+.footer .container .familySiteArea div {
+    display: flex;
+    padding: 1.2rem 0px;
+    margin-left: 1.9rem;
+    border-bottom: 2px solid #000;
+    width: 24rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .container .familySiteArea div b {
+    font-size: var(--text-footerText);
+    color: var(--black);
+    font-weight: 400;
+}
+.footer .container .familySiteArea div img.up {
+    width: 2.2rem;
+    height: 1.2rem;
+    pa
+}
+.footer .container .familySiteArea div img.down {
+    display: none;
+}
+.footer .container .familySiteArea ul.subMenu {
+    display: none;
+}
+.footer .container .familySiteArea ul.subMenu li {
+}
+.footer .container .familySiteArea ul.subMenu li a {
+}
