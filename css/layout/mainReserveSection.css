@@ -1,191 +1,310 @@
-/* ////////////////////////////////////////////////////////////
-    메인 섹션 _ 예약
-////////////////////////////////////////////////////////////*/
-
+/* ============================================================
+   2. mainReserve - 관람 예약 현황 섹션
+============================================================ */
 .mainReserve {
-  padding: 2rem 0 6.8rem;
-  margin: 0 auto;
-  color: var(--gray-darkest);
-}
-.mainReserve .container {
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: right top 1.2rem;
-  background-image: url(../../image/bg_main_cont_01.png);
+    max-width: var(--container);
+    padding: 2rem 0 6.8rem;
+    margin: 0 auto;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right top 1.2rem;
+    background-image: url(/image/bg_main_cont_01.png);
 }
 
-/* Top */
-.mainReserve .container .reserveTop {
-  border-bottom: 0.3rem solid var(--black);
-  margin-bottom: 3.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+/* ── reserveTop ── */
+.mainReserve .reserveTop {
+    border-bottom: 0.3rem solid var(--black);
+    margin-bottom: 3.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.mainReserve .container ul.reserveInfo {
-  display: flex;
-  padding: 1.2rem 0 2.3rem 0;
-}
-.mainReserve .container ul.reserveInfo li {
-  display: flex;
-  align-items: center;
-}
-.mainReserve .container ul.reserveInfo li.clockIcon .iconFrame {
-  width: 2.8rem;
-  height: 2.9rem;
-  margin: 0.3rem 0.9rem 0 0;
-}
-.mainReserve .container ul.reserveInfo li.ticketIcon .iconFrame {
-  width: 3.1rem;
-  height: 2.8rem;
-  margin: -0.3rem 0.9rem 0 0;
-}
-.mainReserve .container ul.reserveInfo li img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.mainReserve .container ul.reserveInfo li strong {
-  font-size: var(--text-xxLargeText);
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 3rem;
-}
-.mainReserve .container ul.reserveInfo li b {
-  font-size: var(--text-bolder);
-  display: inline-block;
-  vertical-align: middle;
-  letter-spacing: -0.04rem;
-  font-weight: 600;
-}
-.mainReserve .container ul.reserveInfo li span {
-  font-size: var(--text-bolder);
-  display: inline-block;
-  vertical-align: middle;
-  letter-spacing: -0.04rem;
-  margin: 0 3rem 0 0.2rem;
+.mainReserve .reserveTop .reserveInfo {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0 2.3rem 0;
+    gap: 0;
+    list-style: none;
 }
 
-.mainReserve .container button.infoLink {
-  display: flex;
-  width: 11.4rem;
-  margin-top: 1.2rem;
-  padding-bottom: 0.3rem;
-  font-size: var(--text-subtitle);
-  border-bottom: 3px solid var(--black);
-  font-weight: 600;
-  letter-spacing: -0.4px;
-  align-items: center;
-}
-.mainReserve .container button.infoLink span {
-}
-.mainReserve .container button.infoLink div {
-  width: 3rem;
-  height: 2rem;
-  margin: 0.2rem 0 0 0.6rem;
-}
-.mainReserve .container button.infoLink div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.mainReserve .reserveTop .reserveInfo li {
+    display: flex;
+    align-items: center;
 }
 
-/* Bottom */
-.mainReserve .container .reserveBottom {
-  display: flex;
+/* 시계 아이콘 */
+.mainReserve .reserveTop .reserveInfo .clockIcon .iconFrame {
+    width: 2.8rem;
+    height: 2.9rem;
+    margin: 0.3rem 0.9rem 0 0;
+    flex-shrink: 0;
 }
 
-.mainReserve .container .reserveBottom .reserveTitle {
-  width: 100%;
-  font-size: var(--text-area-title);
-  text-align: center;
-  padding: 3.2rem 0 1.1rem;
-  letter-spacing: -0.03rem;
-  display: flex;
-  align-items: center;
-}
-.mainReserve .container .reserveBottom .reserveTitle .calenderIcon {
-  width: 2.8rem;
-  height: 2.6rem;
-  margin: 0.5rem 0.8rem 0 0;
-  text-align: center;
-}
-.mainReserve .container .reserveBottom .reserveTitle .calenderIcon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.mainReserve .container .reserveBottom .reserveTitle p {
-}
-.mainReserve .container .reserveBottom .reserveTitle p strong {
-  font-weight: 600;
+/* 티켓 아이콘 */
+.mainReserve .reserveTop .reserveInfo .ticketIcon .iconFrame {
+    width: 3.1rem;
+    height: 2.8rem;
+    margin: -0.3rem 0.9rem 0 0;
+    flex-shrink: 0;
 }
 
-.mainReserve .container .reserveBottom .reserveSchedule {
-  height: 46rem;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  padding: 0 40px;
-  background-repeat: no-repeat;
-  background-position: right bottom -22px;
-  background-image: url(/design/theme/child_kr/images//main/bg_main_cont_02.png);
+.mainReserve .reserveTop .reserveInfo li .iconFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+.mainReserve .reserveTop .reserveInfo li strong {
+    font-size: var(--text-xxLargeText);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3rem;
+}
+
+.mainReserve .reserveTop .reserveInfo li b {
+    font-size: var(--text-bolder);
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: -0.04rem;
+    font-weight: 600;
+}
+
+.mainReserve .reserveTop .reserveInfo li span {
+    font-size: var(--text-bolder);
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: -0.04rem;
+    margin: 0 3rem 0 0.2rem;
+}
+
+/* 오시는 길 버튼 */
+.mainReserve .reserveTop .infoLink {
+    display: flex;
+    width: 11.4rem;
+    margin-top: 1.2rem;
+    padding-bottom: 0.3rem;
+    font-size: var(--text-subtitle);
+    border: none;
+    border-bottom: 3px solid var(--black);
+    background: transparent;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mainReserve .reserveTop .infoLink div {
+    width: 3rem;
+    height: 2rem;
+    margin: 0.2rem 0 0 0.6rem;
+    flex-shrink: 0;
+}
+
+.mainReserve .reserveTop .infoLink div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ── reserveBottom ── */
+.mainReserve .reserveBottom {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* ── reserveSchedule ── */
+.mainReserve .reserveBottom .reserveSchedule {
+    width: 50%;
+    border: 1px solid var(--gray-light);
+    border-radius: 20px;
+    padding: 0 4rem;
+    background-repeat: no-repeat;
+    background-position: right bottom -22px;
+    background-image: url(/image/bg_main_cont_02.png);
+    box-sizing: border-box;
+}
+
+/* 제목 */
+.mainReserve .reserveBottom .reserveSchedule .reserveTitle {
+    display: flex;
+    align-items: center;
+    font-size: var(--text-area-title);
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    padding: 3.2rem 0 1.1rem;
+}
+
+.mainReserve .reserveBottom .reserveSchedule .reserveTitle .calenderIcon {
+    width: 2.8rem;
+    height: 2.6rem;
+    margin-right: 0.8rem;
+    flex-shrink: 0;
+}
+
+.mainReserve .reserveBottom .reserveSchedule .reserveTitle .calenderIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainReserve .reserveBottom .reserveSchedule .reserveTitle p strong {
+    font-weight: 600;
+}
+
+/* ul 리스트 */
 .mainReserve .reserveBottom .reserveSchedule ul {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.mainReserve .reserveBottom .reserveSchedule ul li.subTitle {
-  padding: 0 0 0.4rem;
-  font-size: var(--text-area-desc);
+
+/* 서브 타이틀 행 숨김 */
+.mainReserve .reserveBottom .reserveSchedule ul .subTitle {
+    display: none;
 }
+
+/* 각 회차 행 */
 .mainReserve .reserveBottom .reserveSchedule ul li {
-  border-bottom: 1px dashed var(--gray-light);
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0 1.6rem;
+    border-bottom: 1px dashed var(--gray-light);
+    white-space: nowrap;
 }
+
+.mainReserve .reserveBottom .reserveSchedule ul li:last-child {
+    border-bottom: none;
+}
+
+/* 회차 번호 */
 .mainReserve .reserveBottom .reserveSchedule ul li .roundNum {
-  font-size: var(--text-bolder);
-  position: relative;
-  padding-left: 1.2rem;
-  font-weight: 600;
-  letter-spacing: -0.03rem;
+    width: 22%;
+    font-size: var(--text-bolder);
+    font-weight: 600;
+    color: var(--blue-accent);
+    letter-spacing: -0.03rem;
+    position: relative;
+    padding-left: 1.2rem;
+    flex-shrink: 0;
 }
-.mainReserve .reserveBottom .reserveSchedule ul li .roundNum span {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 13px;
+
+.mainReserve .reserveBottom .reserveSchedule ul li .roundNum::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: var(--blue-accent);
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+/* 시간 */
 .mainReserve .reserveBottom .reserveSchedule ul li .roundTime {
+    flex: 1;
+    font-size: var(--text-subtitle);
+    color: var(--gray-main);
+    letter-spacing: -0.7px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
 }
+
+/* 잔여 인원 */
 .mainReserve .reserveBottom .reserveSchedule ul li .roundRemaining {
+    width: 15%;
+    font-size: var(--text-bolder);
+    font-family: Roboto, sans-serif;
+    text-align: center;
 }
+
+/* 상태 버튼 공통 */
 .mainReserve .reserveBottom .reserveSchedule ul li .roundRemainingState {
-}
-.mainReserve .reserveBottom .reserveSchedule ul li .reserveOn {
-}
-.mainReserve .reserveBottom .reserveSchedule ul li .reserveOff {
-}
-.mainReserve .reserveBottom .roundRemainingState .stateIcon {
-}
-.mainReserve .reserveBottom .roundRemainingState .stateIcon img {
-}
-.mainReserve .reserveBottom .roundRemainingState .stateIcon span {
+    width: 30%;
+    text-align: right;
+    padding-right: 2rem;
+    flex-shrink: 0;
 }
 
-.mainReserve .container .reserveBottom .reserveBox {
+.mainReserve .reserveBottom .reserveSchedule ul li .roundRemainingState .stateIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 12.8rem;
+    height: 4rem;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    color: var(--white-main);
+    font-weight: 500;
 }
+
+.mainReserve .reserveBottom .reserveSchedule ul li .roundRemainingState .stateIcon img {
+    width: 1.4rem;
+    height: 1.3rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* 예약중 (파란색) */
+.mainReserve .reserveBottom .reserveSchedule ul li .reserveOn .stateIcon {
+    background-color: var(--blue-secondary);
+}
+
+/* 접수마감 (회색) */
+.mainReserve .reserveBottom .reserveSchedule ul li .reserveOff .stateIcon {
+    background-color: #6f6f6f;
+}
+
+/* ── reserveBox ── */
+.mainReserve .reserveBottom .reserveBox {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-top: 2.6rem;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
 .mainReserve .reserveBottom .reserveBox .reserveLink {
-}
-.mainReserve .reserveBottom .reserveBox .viewingReserve {
-}
-.mainReserve .reserveBottom .reserveBox .educationReserve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--gray-darkest);
 }
 
-.mainReserve .reserveBox .reserveLink .reserveImg {
+/* 원형 이미지 */
+.mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
 }
-.mainReserve .reserveBox .reserveLink .reserveImg span {
+
+.mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg .pcReserveImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-.mainReserve .reserveBox .reserveLink .reserveImg .pcReserveImg {
+
+.mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg .mobileReserveImg {
+    display: none;
 }
-.mainReserve .reserveBox .reserveLink .reserveImg .mobileReserveImg {
-  display: none;
+
+/* 텍스트 레이블 */
+.mainReserve .reserveBottom .reserveBox .reserveLink span {
+    font-size: var(--text-area-title);
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    text-align: center;
 }

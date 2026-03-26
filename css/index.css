@@ -10,27 +10,29 @@ foundation
 /* /////////////////////////////
 layout
 //////////////////////////////*/
-
 @import "layout/common.css";
-
+/* header */
 @import "layout/header.css";
 @import "layout/header_responsible.css";
 
+/* main */
 @import "layout/mainVisualSection.css";
-
 @import "layout/mainReserveSection.css";
+@import "layout/mainExhibitSection.css";
 @import "layout/mainNoticeSection.css";
 @import "layout/mainSnsSection.css";
+@import "layout/main_responsible.css";
+/* footer */
 
 /* /////////////////////////////
     base
 //////////////////////////////*/
 
 html {
-  font-size: 10px;
-  font-family: "Noto Sans KR";
-  color: var(--gray-main);
+    font-size: 10px;
+    font-family: "Noto Sans KR";
+    color: var(--gray-main);
 }
 a {
-  color: var(--gray-main);
+    color: var(--gray-main);
 }

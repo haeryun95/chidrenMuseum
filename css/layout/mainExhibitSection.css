@@ -1,0 +1,199 @@
+/* ============================================================
+   3. mainExhibit - 전시 / 교육 섹션
+============================================================ */
+.mainExhibit {
+    background-color: #f3f9fe;
+}
+
+.mainExhibit .container {
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+.mainExhibit .mainExhibitInner {
+    display: flex;
+    gap: 3%;
+    padding: 6.3rem 0 6.7rem;
+}
+
+/* exhibitArea, educationArea 공통 */
+.mainExhibit .exhibitArea,
+.mainExhibit .educationArea {
+    flex: 1;
+    min-width: 0;
+}
+
+/* sectionHeader */
+.mainExhibit .exhibitArea .sectionHeader,
+.mainExhibit .educationArea .sectionHeader {
+    position: relative;
+    margin-bottom: 4.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainExhibit .exhibitArea .sectionHeader .sectionTitle,
+.mainExhibit .educationArea .sectionHeader .sectionTitle {
+    font-size: 4.4rem;
+    color: var(--black);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* swiperControl */
+.mainExhibit .exhibitArea .sectionHeader .swiperControl,
+.mainExhibit .educationArea .sectionHeader .swiperControl {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.mainExhibit .exhibitArea .sectionHeader .swiperControl button,
+.mainExhibit .educationArea .sectionHeader .swiperControl button {
+    width: 1.7rem;
+    height: 2rem;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 1;
+}
+
+.mainExhibit .exhibitArea .sectionHeader .swiperControl .swiper-button-prev,
+.mainExhibit .educationArea .sectionHeader .swiperControl .swiper-button-prev {
+    background-image: url(/image/btn_swiper_prev.png);
+}
+
+.mainExhibit .exhibitArea .sectionHeader .swiperControl .swiper-button-next,
+.mainExhibit .educationArea .sectionHeader .swiperControl .swiper-button-next {
+    background-image: url(/image/btn_swiper_next.png);
+}
+
+.mainExhibit .exhibitArea .sectionHeader .swiperControl .swiper-pause,
+.mainExhibit .educationArea .sectionHeader .swiperControl .swiper-pause {
+    width: 0.9rem;
+    height: 1.7rem;
+    background-image: url(/image/btn_swiper_stop.png);
+    background-size: 0.9rem 1.7rem;
+}
+
+/* 슬라이더 */
+.mainExhibit .exhibitArea .exhibitSlider,
+.mainExhibit .educationArea .educationSlider {
+    overflow: hidden;
+}
+
+.mainExhibit .exhibitArea .exhibitSlider .swiper-wrapper,
+.mainExhibit .educationArea .educationSlider .swiper-wrapper {
+    display: flex;
+}
+
+/* contentCard */
+.mainExhibit .exhibitArea .exhibitSlider .contentCard,
+.mainExhibit .educationArea .educationSlider .contentCard {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--gray-darkest);
+    position: relative;
+    outline-offset: -1px;
+}
+
+/* thumb - 이미지 영역 */
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .thumb,
+.mainExhibit .educationArea .educationSlider .contentCard .thumb {
+    position: relative;
+    width: 100%;
+    height: 22rem;
+    overflow: hidden;
+}
+
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .thumb img,
+.mainExhibit .educationArea .educationSlider .contentCard .thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* hover overlay */
+.mainExhibit .exhibitArea .exhibitSlider .contentCard:hover .thumb::after,
+.mainExhibit .educationArea .educationSlider .contentCard:hover .thumb::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(34, 34, 34, 0.6);
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* cardInfo */
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo,
+.mainExhibit .educationArea .educationSlider .contentCard .cardInfo {
+    margin-top: 2rem;
+}
+
+/* labelGroup */
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .labelGroup,
+.mainExhibit .educationArea .educationSlider .contentCard .cardInfo .labelGroup {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 0;
+}
+
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .labelGroup .label,
+.mainExhibit .educationArea .educationSlider .contentCard .cardInfo .labelGroup .label {
+    display: inline-block;
+    min-width: 6rem;
+    height: 3.4rem;
+    line-height: 3.2rem;
+    border: 1px solid var(--black);
+    font-size: 1.7rem;
+    padding: 0 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .labelGroup .label.black,
+.mainExhibit .educationArea .educationSlider .contentCard .cardInfo .labelGroup .label.black {
+    background-color: var(--black);
+    color: var(--white-main);
+}
+
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .labelGroup .label.white,
+.mainExhibit .educationArea .educationSlider .contentCard .cardInfo .labelGroup .label.white {
+    background-color: var(--white-main);
+    color: var(--black);
+}
+
+/* cardTitle */
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .cardTitle,
+.mainExhibit .educationArea .educationSlider .contentCard .cardInfo .cardTitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.9rem;
+    color: var(--gray-darkest);
+    font-weight: 400;
+    margin: 2.3rem 0 0.8rem;
+    line-height: 1.4;
+}
+
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .cardTitle:hover,
+.mainExhibit .educationArea .educationSlider .contentCard .cardInfo .cardTitle:hover {
+    text-decoration: underline;
+}
+
+/* cardDate */
+.mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .cardDate,
+.mainExhibit .educationArea .educationSlider .contentCard .cardInfo .cardDate {
+    font-size: 1.4rem;
+    color: var(--gray-main);
+}
