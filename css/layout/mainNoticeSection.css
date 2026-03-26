@@ -1,0 +1,117 @@
+/* =========================
+   mainNoticeSection
+========================= */
+
+.mainNotice {
+  padding: 80px 0;
+}
+
+.mainNotice .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 타이틀 */
+.sectionTitle {
+  font-size: var(--text-section-title);
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--black);
+}
+
+/* 전체 레이아웃 */
+.noticeWrap {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+
+/* =========================
+   왼쪽 큰 카드
+========================= */
+
+.noticeMainCard {
+  background: var(--gray-bg);
+  position: relative;
+}
+
+.noticeMainInner {
+  padding: 40px;
+  position: relative;
+}
+
+.noticeMainCard .noticeTitle {
+  font-size: var(--text-largeText);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.noticeMainCard .noticeDesc {
+  font-size: var(--text-body);
+  color: var(--gray-main);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.noticeMainCard .noticeDate {
+  font-size: var(--text-small);
+  color: var(--gray-dark);
+}
+
+/* 핀 아이콘 */
+.noticePin {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  opacity: 0.5;
+}
+
+/* =========================
+   오른쪽 리스트
+========================= */
+
+.noticeList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 30px;
+}
+
+/* 각 아이템 */
+.noticeItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--gray-light);
+  padding-top: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.noticeItem:hover {
+  opacity: 0.7;
+}
+
+.noticeItem .text {
+  flex: 1;
+}
+
+.noticeItem .title {
+  font-size: var(--text-body);
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+.noticeItem .date {
+  font-size: var(--text-small);
+  color: var(--gray-main);
+}
+
+/* 화살표 아이콘 */
+.noticeItem img {
+  width: 16px;
+  margin-left: 10px;
+  opacity: 0.6;
+}

@@ -5,13 +5,13 @@
 .mainReserve {
   padding: 2rem 0 6.8rem;
   margin: 0 auto;
+  color: var(--gray-darkest);
+}
+.mainReserve .container {
   position: relative;
   background-repeat: no-repeat;
   background-position: right top 1.2rem;
   background-image: url(../../image/bg_main_cont_01.png);
-  color: var(--gray-darkest);
-}
-.mainReserve .container {
 }
 
 /* Top */

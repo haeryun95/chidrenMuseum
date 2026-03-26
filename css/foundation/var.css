@@ -16,6 +16,7 @@
   --yellow-100: #ffcc33;
   --yellow-accent: var(--yellow-100);
 
+  --gray-20: #f5f5f5;
   --gray-50: #eaeaea;
   --gray-100: #ccc;
   --gray-150: #ddd;
@@ -24,6 +25,7 @@
   --gray-400: #444;
   --gray-500: #222;
 
+  --gray-bg: var(--gray-20);
   --gray-border: var(--gray-50);
   --gray-lighter: var(--gray-100);
   --gray-light: var(--gray-150);
@@ -33,11 +35,10 @@
   --gray-darkest: var(--gray-500);
 
   --black: #000;
+
   /* =========================
        font-size
     ========================= */
-
-  /* scale */
   --fs-100: 1.2rem;
   --fs-200: 1.3rem;
   --fs-300: 1.4rem;
@@ -52,7 +53,7 @@
   --fs-780: 3rem;
   --fs-800: 3.2rem;
   --fs-830: 3.5rem;
-
+  --fs-900: 4.6rem;
   --fs-17vw: 1.7vw;
 
   /* semantic */
@@ -71,4 +72,7 @@
   --text-title: var(--fs-800);
   --text-xxxLarge: var(--fs-830);
   --text-viewport: var(--fs-17vw);
+  --text-section-title: var(--fs-900);
+
+  --container: 140rem;
 }
