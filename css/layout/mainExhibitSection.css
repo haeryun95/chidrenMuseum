@@ -35,7 +35,11 @@
 
 .mainExhibit .exhibitArea .sectionHeader .sectionTitle,
 .mainExhibit .educationArea .sectionHeader .sectionTitle {
-    font-size: 4.4rem;
+    position: relative;
+}
+.mainExhibit .exhibitArea .sectionHeader .sectionTitle a,
+.mainExhibit .educationArea .sectionHeader .sectionTitle a {
+    font-size: 3rem;
     color: var(--black);
     font-weight: 600;
     line-height: 1.2;
@@ -44,9 +48,14 @@
 /* swiperControl */
 .mainExhibit .exhibitArea .sectionHeader .swiperControl,
 .mainExhibit .educationArea .sectionHeader .swiperControl {
+    width: 7rem;
+    position: absolute;
+    top: 16px;
+    right: 0;
     display: flex;
     align-items: center;
     gap: 0.4rem;
+    justify-content: space-between;
 }
 
 .mainExhibit .exhibitArea .sectionHeader .swiperControl button,
@@ -63,18 +72,20 @@
     opacity: 1;
 }
 
-.mainExhibit .exhibitArea .sectionHeader .swiperControl .swiper-button-prev,
-.mainExhibit .educationArea .sectionHeader .swiperControl .swiper-button-prev {
+.mainExhibit .exhibitArea .sectionHeader .swiperControl .exhibitPrev,
+.mainExhibit .educationArea .sectionHeader .swiperControl .educationPrev {
+    display: inline-block;
     background-image: url(/image/btn_swiper_prev.png);
 }
 
-.mainExhibit .exhibitArea .sectionHeader .swiperControl .swiper-button-next,
-.mainExhibit .educationArea .sectionHeader .swiperControl .swiper-button-next {
+.mainExhibit .exhibitArea .sectionHeader .swiperControl .exhibitNext,
+.mainExhibit .educationArea .sectionHeader .swiperControl .educationNext {
+    display: inline-block;
     background-image: url(/image/btn_swiper_next.png);
 }
 
-.mainExhibit .exhibitArea .sectionHeader .swiperControl .swiper-pause,
-.mainExhibit .educationArea .sectionHeader .swiperControl .swiper-pause {
+.mainExhibit .exhibitArea .sectionHeader .swiperControl .exhibitPause,
+.mainExhibit .educationArea .sectionHeader .swiperControl .educationPause {
     width: 0.9rem;
     height: 1.7rem;
     background-image: url(/image/btn_swiper_stop.png);

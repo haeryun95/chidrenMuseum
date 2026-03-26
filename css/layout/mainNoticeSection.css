@@ -7,7 +7,7 @@
     margin: 5.4rem auto 0;
 }
 
-.mainNotice .mainNotice .sectionTitle {
+.mainNotice .sectionTitle {
     font-size: 4.6rem;
     color: var(--black);
     letter-spacing: -1.2px;
@@ -84,8 +84,11 @@
 
 /* noticeList */
 .mainNotice .noticeWrap .noticeList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex: 1;
-    padding-left: 1rem;
+    margin-left: 3rem;
+    column-gap: 3rem;
 }
 
 .mainNotice .noticeWrap .noticeList .noticeItem {
