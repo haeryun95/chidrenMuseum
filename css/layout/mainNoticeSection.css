@@ -43,6 +43,7 @@
 }
 
 .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeTitle {
+    color: var(--black);
     display: block;
     word-break: keep-all;
     font-size: 1.8rem;

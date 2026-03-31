@@ -23,6 +23,10 @@ const exhibitSliderSlider = new Swiper(".exhibitSlider", {
     autoplay: {
         delay: 4000,
     },
+    navigation: {
+        nextEl: ".exhibitNext",
+        prevEl: ".exhibitPrev",
+    },
 });
 const educationSlider = new Swiper(".educationSlider", {
     loop: true,
@@ -32,4 +36,36 @@ const educationSlider = new Swiper(".educationSlider", {
     autoplay: {
         delay: 4100,
     },
+    navigation: {
+        nextEl: ".educationNext",
+        prevEl: ".educationPrev",
+    },
+});
+
+const exhibitPause = document.querySelector(".exhibitPause");
+
+exhibitPause.addEventListener("click", () => {
+    const isActive = exhibitPause.classList.toggle("active");
+
+    if (isActive) {
+        exhibitSliderSlider.autoplay.start();
+        exhibitPause.style.backgroundImage = "url('/image/btn_swiper_stop.png')";
+    } else {
+        exhibitSliderSlider.autoplay.stop();
+        exhibitPause.style.backgroundImage = "url('/image/btn_swiper_play.png')";
+    }
+});
+
+const educationPause = document.querySelector(".educationPause");
+
+educationPause.addEventListener("click", () => {
+    const isActive = educationPause.classList.toggle("active");
+
+    if (isActive) {
+        educationSlider.autoplay.start();
+        educationPause.style.backgroundImage = "url('/image/btn_swiper_stop.png')";
+    } else {
+        educationSlider.autoplay.stop();
+        educationPause.style.backgroundImage = "url('/image/btn_swiper_play.png')";
+    }
 });

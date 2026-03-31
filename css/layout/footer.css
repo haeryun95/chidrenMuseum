@@ -1,23 +1,24 @@
 .footer {
 }
-.footer .container {
-}
 
-/* footerMenu */
-.footer .container ul.footerMenu {
-    width: 100vw;
+/* footer top box */
 
-    padding: 1.8rem 0;
+.footer .footerTopBox {
     border: 1px solid var(--gray-light);
+}
+.footer ul.footerMenu {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1.8rem 0;
     border-left: none;
     border-right: none;
     display: flex;
 }
-.footer .container ul.footerMenu li {
+.footer ul.footerMenu li {
     display: flex;
     align-items: center;
 }
-.footer .container ul.footerMenu li:not(li:first-child)::before {
+.footer ul.footerMenu li:not(li:first-child)::before {
     content: "";
     width: 0.1rem;
     height: 1.6rem;
@@ -26,29 +27,31 @@
     display: inline-block;
     vertical-align: middle;
 }
-.footer .container ul.footerMenu li a {
+.footer ul.footerMenu li a {
     width: 100%;
     font-size: var(--text-footerText);
     line-height: 1.2;
     color: var(--gray-darker);
 }
-.footer .container ul.footerMenu li a.privacy {
+.footer ul.footerMenu li a.privacy {
     font-weight: 600;
 }
 
-/* footerBox */
+/* footerBottomBox */
 
-.footer .container .footerBox {
+.footer .footerBottomBox {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 4rem 0 3.6rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
-.footer .container .museumInfoBox {
+.footer .museumInfoBox {
 }
-.footer .container .museumInfoBox ul.addressArea {
+.footer .museumInfoBox ul.addressArea {
     display: flex;
 }
-.footer .container .museumInfoBox ul.addressArea li {
+.footer .museumInfoBox ul.addressArea li {
     display: flex;
     align-items: center;
     font-size: var(--text-footerText);
@@ -56,7 +59,7 @@
     line-height: 1.2;
     letter-spacing: -0.04rem;
 }
-.footer .container .museumInfoBox ul.addressArea li:not(li:first-child)::before {
+.footer .museumInfoBox ul.addressArea li:not(li:first-child)::before {
     content: "";
     width: 0.1rem;
     height: 1.6rem;
@@ -66,7 +69,7 @@
     vertical-align: middle;
 }
 
-.footer .container .museumInfoBox p.copyrightArea {
+.footer .museumInfoBox p.copyrightArea {
     padding-top: 0.7rem;
     font-size: var(--text-footerText);
     color: var(--gray-darker);
@@ -74,18 +77,18 @@
     letter-spacing: -0.04rem;
 }
 
-.footer .container .familySiteArea {
+.footer .familySiteArea {
     display: flex;
     justify-content: flex-end;
 }
-.footer .container .familySiteArea h2.familySiteLog {
+.footer .familySiteArea h2.familySiteLog {
     max-width: 9rem;
 }
-.footer .container .familySiteArea h2.familySiteLog img {
+.footer .familySiteArea h2.familySiteLog img {
     width: 100%;
     object-fit: cover;
 }
-.footer .container .familySiteArea div {
+.footer .familySiteArea div {
     display: flex;
     padding: 1.2rem 0px;
     margin-left: 1.9rem;
@@ -93,24 +96,52 @@
     width: 24rem;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
-.footer .container .familySiteArea div b {
+.footer .familySiteArea div button {
     font-size: var(--text-footerText);
     color: var(--black);
     font-weight: 400;
 }
-.footer .container .familySiteArea div img.up {
+.footer .familySiteArea div.selected button {
+    background-color: var(--black);
+    color: var(--gray-lighter);
+}
+.footer .familySiteArea div.familySiteBtn img.up {
     width: 2.2rem;
     height: 1.2rem;
-    pa
 }
-.footer .container .familySiteArea div img.down {
+.footer .familySiteArea div.familySiteBtn img.down {
     display: none;
 }
-.footer .container .familySiteArea ul.subMenu {
+
+.footer .familySiteArea div.familySiteBtn.selected img.up {
     display: none;
 }
-.footer .container .familySiteArea ul.subMenu li {
+.footer .familySiteArea div.familySiteBtn.selected img.down {
+    width: 2.2rem;
+    height: 1.2rem;
 }
-.footer .container .familySiteArea ul.subMenu li a {
+
+.footer .familySiteArea ul.subMenu {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    padding: 3.5rem 0;
+    text-align: center;
+    background: var(--black);
+    flex-direction: column;
+    gap: 15px;
+}
+.footer .familySiteArea ul.subMenu li {
+}
+.footer .familySiteArea ul.subMenu li a {
+    color: var(--gray-lighter);
+    font-size: var(--text-small);
+}
+.footer .familySiteArea div.familySiteBtn.selected ul.subMenu {
+    display: flex;
 }
