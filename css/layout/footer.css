@@ -5,13 +5,13 @@
 
 .footer .footerTopBox {
     border: 1px solid var(--gray-light);
+    border-left: none;
+    border-right: none;
 }
 .footer ul.footerMenu {
     max-width: 1440px;
     margin: 0 auto;
     padding: 1.8rem 0;
-    border-left: none;
-    border-right: none;
     display: flex;
 }
 .footer ul.footerMenu li {
@@ -80,6 +80,7 @@
 .footer .familySiteArea {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 .footer .familySiteArea h2.familySiteLog {
     max-width: 9rem;
@@ -88,60 +89,71 @@
     width: 100%;
     object-fit: cover;
 }
-.footer .familySiteArea div {
+.footer .familySiteArea button.familySiteBtn {
     display: flex;
-    padding: 1.2rem 0px;
+    padding: 1.2rem 1.5rem;
     margin-left: 1.9rem;
-    border-bottom: 2px solid #000;
+    border: none;
+    border-bottom: 2px solid var(--black);
     width: 24rem;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    background-color: transparent;
+    cursor: pointer;
 }
-.footer .familySiteArea div button {
+.footer .familySiteArea button.familySiteBtn span {
     font-size: var(--text-footerText);
     color: var(--black);
     font-weight: 400;
 }
-.footer .familySiteArea div.selected button {
+.footer .familySiteArea button.familySiteBtn.selected {
     background-color: var(--black);
+}
+.footer .familySiteArea button.familySiteBtn.selected span {
     color: var(--gray-lighter);
 }
-.footer .familySiteArea div.familySiteBtn img.up {
+.footer .familySiteArea button.familySiteBtn img.up {
     width: 2.2rem;
     height: 1.2rem;
 }
-.footer .familySiteArea div.familySiteBtn img.down {
+.footer .familySiteArea button.familySiteBtn img.down {
     display: none;
 }
-
-.footer .familySiteArea div.familySiteBtn.selected img.up {
+.footer .familySiteArea button.familySiteBtn.selected img.up {
     display: none;
 }
-.footer .familySiteArea div.familySiteBtn.selected img.down {
+.footer .familySiteArea button.familySiteBtn.selected img.down {
+    display: block;
     width: 2.2rem;
     height: 1.2rem;
 }
-
 .footer .familySiteArea ul.subMenu {
     display: none;
     width: 100%;
     box-sizing: border-box;
     position: absolute;
-    bottom: 5rem;
+    bottom: calc(100% + 2px);
     left: 0;
-    padding: 3.5rem 0;
+    padding: 2rem 0;
     text-align: center;
     background: var(--black);
-    flex-direction: column;
-    gap: 15px;
+    z-index: 10;
+    height: 16rem;
+}
+.footer .familySiteArea button.familySiteBtn.selected ul.subMenu {
 }
 .footer .familySiteArea ul.subMenu li {
+    margin-bottom: 1.5rem;
 }
 .footer .familySiteArea ul.subMenu li a {
     color: var(--gray-lighter);
     font-size: var(--text-small);
+    display: block;
+    padding: 0.5rem 0;
+    transition: color 0.2s;
 }
-.footer .familySiteArea div.familySiteBtn.selected ul.subMenu {
-    display: flex;
+.footer .familySiteArea ul.subMenu li a:hover {
+    color: var(--white-main);
+    text-decoration: underline;
 }
