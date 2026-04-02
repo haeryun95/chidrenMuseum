@@ -52,6 +52,12 @@
 
     .mainReserve .reserveTop {
         padding: 0 2rem 4rem;
+        flex-direction: column;
+    }
+
+    .mainReserve .reserveTop .reserveInfo {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .mainReserve .reserveBottom {
@@ -70,11 +76,22 @@
     }
 
     .mainReserve .reserveBottom .reserveSchedule .reserveTitle {
-        font-size: 1.2rem;
-        padding: 3.4rem 0 1.4rem;
+        align-items: flex-start;
+        font-size: 1.9rem;
+        padding: 3.4rem 1rem 1.4rem 0;
         letter-spacing: -0.6px;
     }
 
+    .mainReserve .reserveBottom .reserveSchedule .reserveTitle .calenderIcon {
+        width: 2.2rem;
+        height: 2rem;
+        margin-top: 0.4rem;
+        margin-right: 0;
+    }
+    .mainReserve .reserveBottom .reserveSchedule .reserveTitle p {
+        font-weight: 400;
+        text-align: center;
+    }
     .mainReserve .reserveBottom .reserveSchedule ul li {
         padding: 0.6rem 0 1.4rem;
         flex-wrap: wrap;
@@ -110,7 +127,7 @@
     .mainReserve .reserveBottom .reserveSchedule ul li .roundRemainingState .stateIcon {
         width: 100%;
         height: 3rem;
-        font-size: 0.82rem;
+        font-size: 1.3rem;
     }
 
     /* reserveBox 모바일: 가로 배치 */
@@ -124,7 +141,8 @@
     .mainReserve .reserveBottom .reserveBox .reserveLink {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        gap: 0;
     }
 
     .mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg {
@@ -145,6 +163,8 @@
 
     .mainReserve .reserveBottom .reserveBox .reserveLink span {
         font-size: 2rem;
+        padding-left: 5rem;
+        font-weight: 600;
     }
 
     /* mainExhibit */

@@ -133,6 +133,7 @@
     font-weight: 600;
     letter-spacing: -0.03rem;
     padding: 3.2rem 0 1.1rem;
+    color: var(--black);
 }
 
 .mainReserve .reserveBottom .reserveSchedule .reserveTitle .calenderIcon {
