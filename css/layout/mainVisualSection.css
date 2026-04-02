@@ -38,14 +38,14 @@
 ========================= */
 .mainVisual .mainVisualSlider .mainVisualPrev,
 .mainVisual .mainVisualSlider .mainVisualNext {
-    width: 34px;
-    height: 60px;
+    width: 3.4rem;
+    height: 6rem;
     text-indent: -9999em;
     position: absolute;
     cursor: pointer;
     top: 50%;
     z-index: 10;
-    margin-top: -30px;
+    margin-top: -3rem;
     -webkit-background-size: auto;
     background-size: auto;
 }
@@ -86,8 +86,8 @@
     z-index: 10;
 }
 .mainVisual .mainVisualSlider .controlBox .mainVisualPagination .swiper-pagination-bullet {
-    width: 25px;
-    height: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
     background: #fff;
     border-radius: 50%;
     opacity: 1;
@@ -99,7 +99,7 @@
     font-size: 0px;
 }
 .mainVisual .mainVisualSlider .controlBox .mainVisualPagination .swiper-pagination-bullet-active {
-    width: 25px;
+    width: 2.5rem;
     background: #3f0b9f;
     border: 1px solid #3f0b9f;
     border-radius: 5px;
@@ -108,18 +108,18 @@
 .mainVisual .mainVisualSlider .controlBox .swiper-btn-ctrl {
 }
 .mainVisual .mainVisualSlider .controlBox .pauseBtn {
-    width: 38px;
-    height: 38px;
-    background-size: 38px;
+    width: 3.8rem;
+    height: 3.8rem;
+    background-size: 3.8rem;
     margin-left: 10px;
     background-image: url(../../image/main_btn_stop.png);
     margin-right: -5px;
 }
 .mainVisual .mainVisualSlider .controlBox .playBtn {
     display: none;
-    width: 38px;
-    height: 38px;
-    background-size: 38px;
+    width: 3.8rem;
+    height: 3.8rem;
+    background-size: 3.8rem;
     margin-left: 10px;
     background-image: url(../../image/main_btn_play.png);
 }

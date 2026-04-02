@@ -23,6 +23,14 @@ const exhibitSliderSlider = new Swiper(".exhibitSlider", {
     autoplay: {
         delay: 4000,
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        426: {
+            slidesPerView: 2,
+        },
+    },
     navigation: {
         nextEl: ".exhibitNext",
         prevEl: ".exhibitPrev",
@@ -35,6 +43,14 @@ const educationSlider = new Swiper(".educationSlider", {
     spaceBetween: 20,
     autoplay: {
         delay: 4100,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        426: {
+            slidesPerView: 2,
+        },
     },
     navigation: {
         nextEl: ".educationNext",

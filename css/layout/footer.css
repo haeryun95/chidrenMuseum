@@ -9,7 +9,7 @@
     border-right: none;
 }
 .footer ul.footerMenu {
-    max-width: 1440px;
+    max-width: 144rem;
     margin: 0 auto;
     padding: 1.8rem 0;
     display: flex;
@@ -40,7 +40,7 @@
 /* footerBottomBox */
 
 .footer .footerBottomBox {
-    max-width: 1440px;
+    max-width: 144rem;
     margin: 0 auto;
     padding: 4rem 0 3.6rem;
     display: flex;

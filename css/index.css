@@ -27,6 +27,7 @@ layout
 
 /* footer */
 @import "layout/footer.css";
+@import "layout/footer_responsible.css";
 
 /* /////////////////////////////
     base
