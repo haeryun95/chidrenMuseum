@@ -6,7 +6,7 @@
         <title>어린이 박물관</title>
 
         <!-- Favicon 파비콘 -->
-        <link rel="shortcut icon" href="/image/favicon.png" />
+        <link rel="shortcut icon" href="favicon.png" />
         <!-- swiper css -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
         <!-- CSS 스타일파일 -->
@@ -106,65 +106,84 @@
                     </nav>
                     <!-- mobile Navigation -->
                     <nav class="mobileNavigation">
-                        <h1 class="logo">
-                            <a href="#"><img src="/image/logo_child.png" alt="" /></a>
-                        </h1>
-                        <div class="navBtnBox">
-                            <a href="#" class="searchBtn">
-                                <img src="/image/" alt="" />
-                            </a>
-                            <a href="#" class="hamburgerBtn"></a>
+                        <div class="innerMobileHeader">
+                            <h1 class="logo">
+                                <a href="#"><img src="/image/logo_child.png" alt="" /></a>
+                            </h1>
+                            <div class="navBtnBox">
+                                <a href="#" class="searchBtn">
+                                    <img src="/image/m_btn_search_open.png" alt="검색버튼" />
+                                </a>
+                                <a href="#" class="hamburgerBtn">
+                                    <img src="/image/m_btn_menu_open.png" alt="햄버거버튼" />
+                                </a>
+                            </div>
                         </div>
 
                         <!-- mobile sub Menu -->
                         <div class="mobileGnb">
-                            <div class="mobileGnbBackground"></div>
-                            <ul class="mobileGnbMenu">
-                                <li>
-                                    <a href="#">관람</a>
-                                    <ul class="mobileGnbSubMenu">
-                                        <li><a href="#">알려드려요</a></li>
-                                        <li><a href="#">이용안내</a></li>
-                                        <li><a href="#">시설안내</a></li>
-                                        <li><a href="#">오시는길</a></li>
-                                        <li><a href="#">자주하는질문</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">전시</a>
-                                    <ul class="mobileGnbSubMenu">
-                                        <li><a href="#">상설 전시</a></li>
-                                        <li><a href="#">온라인 전시</a></li>
-                                        <li><a href="#">지난 전시</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">교육</a>
-                                    <ul class="mobileGnbSubMenu">
-                                        <li><a href="#">전체프로그램</a></li>
-                                        <li><a href="#">개인</a></li>
-                                        <li><a href="#">단체</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">자료</a>
-                                    <ul class="mobileGnbSubMenu">
-                                        <li><a href="#">동영상</a></li>
-                                        <li><a href="#">활동지</a></li>
-                                        <li><a href="#">연구자료</a></li>
-                                        <li><a href="#">전시자료</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">소개</a>
-                                    <ul class="mobileGnbSubMenu">
-                                        <li><a href="#">어린이박물관 소개</a></li>
-                                        <li><a href="#">박물간 상징 소개</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <div class="innerMobileGnb">
+                                <div class="mobileGnbBox">
+                                    <div class="topBox">
+                                        <a class="changeEnglish">
+                                            <span> English </span>
+                                            <img src="/image/ico_r_black_close.png" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="bottomBox">
+                                        <a href="#" class="login">로그인</a>
+                                        <a href="#" class="signUp">회원가입</a>
+                                    </div>
+                                </div>
+                                <ul class="mobileGnbMenu">
+                                    <li>
+                                        <a href="#">관람</a>
+                                        <ul class="mobileGnbSubMenu">
+                                            <li><a href="#">알려드려요</a></li>
+                                            <li><a href="#">이용안내</a></li>
+                                            <li><a href="#">시설안내</a></li>
+                                            <li><a href="#">오시는길</a></li>
+                                            <li><a href="#">자주하는질문</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">전시</a>
+                                        <ul class="mobileGnbSubMenu">
+                                            <li><a href="#">상설 전시</a></li>
+                                            <li><a href="#">온라인 전시</a></li>
+                                            <li><a href="#">지난 전시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">교육</a>
+                                        <ul class="mobileGnbSubMenu">
+                                            <li><a href="#">전체프로그램</a></li>
+                                            <li><a href="#">개인</a></li>
+                                            <li><a href="#">단체</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">자료</a>
+                                        <ul class="mobileGnbSubMenu">
+                                            <li><a href="#">동영상</a></li>
+                                            <li><a href="#">활동지</a></li>
+                                            <li><a href="#">연구자료</a></li>
+                                            <li><a href="#">전시자료</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">소개</a>
+                                        <ul class="mobileGnbSubMenu">
+                                            <li><a href="#">어린이박물관 소개</a></li>
+                                            <li><a href="#">박물간 상징 소개</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </nav>
+                    <div class="mobileGnbBackground"></div>
+
                     <!-- search screen-->
                     <div class="searchFormBox">
                         <div class="innerSearchFormBox">

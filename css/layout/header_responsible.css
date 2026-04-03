@@ -1,6 +1,4 @@
 @media screen and (min-width: 992px) and (max-width: 1280px) {
-    header .container nav.mainNavigation {
-    }
     header .container nav.mainNavigation h1.logo {
         width: 147px;
     }
@@ -50,6 +48,9 @@
     }
 }
 @media screen and (max-width: 991px) {
+    .header {
+        padding: 0;
+    }
     /* 모바일 버전 display 설정 */
     header .container .headerLinks {
         display: none;
