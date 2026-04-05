@@ -72,3 +72,92 @@ const closeSearchArea = () => {
 
 $searchFormOpenBnt.on("click", openSearchArea);
 $searchFormCloseBnt.on("click", closeSearchArea);
+
+////mobile
+$(function () {
+  const $menuBtn = $(".hamburgerBtn");
+  const $menu = $(".mobileGnb");
+  const $dim = $(".mobileGnbBackground");
+  const $menuCloseBtn = $(".menuCloseBtn");
+  const $depth1 = $(".mobileGnbMenu > li > a");
+
+  function openDim() {
+    $dim.addClass("isOpen");
+    $("body").addClass("mobileLayerOpen");
+  }
+
+  function closeDim() {
+    $dim.removeClass("isOpen");
+    $("body").removeClass("mobileLayerOpen");
+  }
+
+  function resetDepth() {
+    $(".mobileGnbMenu > li").removeClass("active");
+    $(".mobileGnbMenu > li > a").removeClass("on");
+    $(".mobileGnbSubMenu").stop(true, true).hide();
+  }
+
+  function openMenu() {
+    $menu.addClass("isOpen");
+    openDim();
+  }
+
+  function closeMenu() {
+    $menu.removeClass("isOpen");
+    resetDepth();
+    closeDim();
+  }
+
+  function closeAllLayers() {
+    closeMenu();
+  }
+
+  $menuBtn.on("click", function (e) {
+    e.preventDefault();
+
+    if ($menu.hasClass("isOpen")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  $menuCloseBtn.on("click", function (e) {
+    e.preventDefault();
+    closeMenu();
+  });
+
+  $dim.on("click", function () {
+    closeAllLayers();
+  });
+
+  $depth1.on("click", function (e) {
+    const $this = $(this);
+    const $parent = $this.parent("li");
+    const $subMenu = $this.next(".mobileGnbSubMenu");
+
+    if ($subMenu.length) {
+      e.preventDefault();
+
+      if ($parent.hasClass("active")) {
+        $parent.removeClass("active");
+        $this.removeClass("on");
+        $subMenu.stop(true, true).slideUp(220);
+      } else {
+        $(".mobileGnbMenu > li").removeClass("active");
+        $(".mobileGnbMenu > li > a").removeClass("on");
+        $(".mobileGnbSubMenu").stop(true, true).slideUp(220);
+
+        $parent.addClass("active");
+        $this.addClass("on");
+        $subMenu.stop(true, true).slideDown(240);
+      }
+    }
+  });
+
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeAllLayers();
+    }
+  });
+});

@@ -11,8 +11,10 @@ foundation
 layout
 //////////////////////////////*/
 @import "layout/common.css";
+
 /* header */
 @import "layout/header.css";
+@import "layout/header_m.css";
 
 @import "layout/header_responsible.css";
 
@@ -34,10 +36,10 @@ layout
 //////////////////////////////*/
 
 html {
-    font-size: 10px;
-    font-family: "Noto Sans KR";
-    color: var(--gray-main);
+  font-size: 10px;
+  font-family: "Noto Sans KR";
+  color: var(--gray-main);
 }
 a {
-    color: var(--gray-main);
+  color: var(--gray-main);
 }

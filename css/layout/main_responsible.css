@@ -4,322 +4,374 @@
 
 /* 1224px */
 @media all and (max-width: 1224px) {
-    /* mainReserve */
-    .mainReserve .reserveBottom .reserveSchedule .reserveTitle {
-        font-size: 2.4rem;
-    }
+  /* mainReserve */
+  .mainReserve .reserveBottom .reserveSchedule .reserveTitle {
+    font-size: 2.4rem;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule ul li .roundNum {
-        width: 20%;
-        font-size: 1.7rem;
-    }
+  .mainReserve .reserveBottom .reserveSchedule ul li .roundNum {
+    width: 20%;
+    font-size: 1.7rem;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule ul li .roundTime {
-        font-size: 1.7rem;
-    }
+  .mainReserve .reserveBottom .reserveSchedule ul li .roundTime {
+    font-size: 1.7rem;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule ul li .roundRemaining {
-        font-size: 1.7rem;
-    }
+  .mainReserve .reserveBottom .reserveSchedule ul li .roundRemaining {
+    font-size: 1.7rem;
+  }
 
-    .mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg {
-        width: 18rem;
-        height: 18rem;
-    }
+  .mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 /* 991px 모바일 */
 @media all and (max-width: 991px) {
-    /* mainVisual */
-    .mainVisual .mainVisualPrev,
-    .mainVisual .mainVisualNext {
-        display: none;
-    }
+  /* mainVisual */
+  .mainVisual {
+    padding: 0;
+  }
+  .mainVisualSlider .m_visual_image {
+    display: block;
+  }
 
-    .mainVisual .controlBox .pauseBtn,
-    .mainVisual .controlBox .playBtn {
-        width: 2.5rem;
-        height: 2.5rem;
-        background-size: 2.5rem;
-    }
+  .mainVisualSlider .pc_visual_image {
+    display: none;
+  }
 
-    /* mainReserve */
-    .mainReserve {
-        max-width: 100%;
-        padding: 3.1rem 0 5rem;
-        background-position: right 3.4rem top 18.3rem;
-    }
+  .mainVisual .mainVisualPrev,
+  .mainVisual .mainVisualNext {
+    display: none;
+  }
 
-    .mainReserve .reserveTop {
-        padding: 0 2rem 4rem;
-        flex-direction: column;
-    }
+  .mainVisual .controlBox .pauseBtn,
+  .mainVisual .controlBox .playBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 2.5rem;
+  }
 
-    .mainReserve .reserveTop .reserveInfo {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  /* mainReserve */
+  .mainReserve {
+    max-width: 100%;
+    padding: 3.1rem 0 5rem;
+    background-position: right 3.4rem top 18.3rem;
+  }
 
-    .mainReserve .reserveBottom {
-        flex-direction: column;
-        padding: 0 2rem;
-        gap: 2rem;
-    }
+  .mainReserve .reserveTop {
+    padding: 0 2rem 4rem;
+    flex-direction: column;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule {
-        flex: none;
-        width: 100%;
-        padding: 0 2rem;
-        border-radius: 10px;
-        background-position: right -45px bottom 0;
-        background-size: 222px;
-    }
+  .mainReserve .reserveTop .reserveInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule .reserveTitle {
-        align-items: flex-start;
-        font-size: 1.9rem;
-        padding: 3.4rem 1rem 1.4rem 0;
-        letter-spacing: -0.6px;
-    }
+  .mainReserve .reserveBottom {
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 2rem;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule .reserveTitle .calenderIcon {
-        width: 2.2rem;
-        height: 2rem;
-        margin-top: 0.4rem;
-        margin-right: 0;
-    }
-    .mainReserve .reserveBottom .reserveSchedule .reserveTitle p {
-        font-weight: 400;
-        text-align: center;
-    }
-    .mainReserve .reserveBottom .reserveSchedule ul li {
-        padding: 0.6rem 0 1.4rem;
-        flex-wrap: wrap;
-    }
+  .mainReserve .reserveBottom .reserveSchedule {
+    flex: none;
+    width: 100%;
+    padding: 0 2rem;
+    border-radius: 10px;
+    background-position: right -45px bottom 0;
+    background-size: 222px;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule ul li .roundNum {
-        width: 33.33%;
-        font-size: 1.7rem;
-        padding-left: 1rem;
-    }
+  .mainReserve .reserveBottom .reserveSchedule .reserveTitle {
+    align-items: flex-start;
+    font-size: 1.9rem;
+    padding: 3.4rem 1rem 1.4rem 0;
+    letter-spacing: -0.6px;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule ul li .roundTime {
-        width: 33.33%;
-        font-size: 1.7rem;
-        font-weight: 500;
-        letter-spacing: -0.2px;
-        text-align: left;
-    }
+  .mainReserve .reserveBottom .reserveSchedule .reserveTitle .calenderIcon {
+    width: 2.2rem;
+    height: 2rem;
+    margin-top: 0.4rem;
+    margin-right: 0;
+  }
+  .mainReserve .reserveBottom .reserveSchedule .reserveTitle p {
+    font-weight: 400;
+    text-align: center;
+  }
+  .mainReserve .reserveBottom .reserveSchedule ul li {
+    padding: 0.6rem 0 1.4rem;
+    flex-wrap: wrap;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule ul li .roundRemaining {
-        width: 33.33%;
-        font-size: 1.5rem;
-        text-align: right;
-    }
+  .mainReserve .reserveBottom .reserveSchedule ul li .roundNum {
+    width: 33.33%;
+    font-size: 1.7rem;
+    padding-left: 1rem;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule ul li .roundRemainingState {
-        width: 100%;
-        text-align: left;
-        padding-right: 0;
-        padding-top: 0.7rem;
-    }
+  .mainReserve .reserveBottom .reserveSchedule ul li .roundTime {
+    width: 33.33%;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    text-align: left;
+  }
 
-    .mainReserve .reserveBottom .reserveSchedule ul li .roundRemainingState .stateIcon {
-        width: 100%;
-        height: 3rem;
-        font-size: 1.3rem;
-    }
+  .mainReserve .reserveBottom .reserveSchedule ul li .roundRemaining {
+    width: 33.33%;
+    font-size: 1.5rem;
+    text-align: right;
+  }
 
-    /* reserveBox 모바일: 가로 배치 */
-    .mainReserve .reserveBottom .reserveBox {
-        width: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 2rem;
-        padding-top: 0;
-    }
-    .mainReserve .reserveBottom .reserveBox .reserveLink {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
+  .mainReserve .reserveBottom .reserveSchedule ul li .roundRemainingState {
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    padding-top: 0.7rem;
+  }
 
-    .mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg {
-        width: 16rem;
-        height: 16rem;
-    }
+  .mainReserve
+    .reserveBottom
+    .reserveSchedule
+    ul
+    li
+    .roundRemainingState
+    .stateIcon {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
 
-    .mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg .pcReserveImg {
-        display: none;
-    }
+  /* reserveBox 모바일: 가로 배치 */
+  .mainReserve .reserveBottom .reserveBox {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-top: 0;
+  }
+  .mainReserve .reserveBottom .reserveBox .reserveLink {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 
-    .mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg .mobileReserveImg {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  .mainReserve .reserveBottom .reserveBox .reserveLink .reserveImg {
+    width: 16rem;
+    height: 16rem;
+  }
 
-    .mainReserve .reserveBottom .reserveBox .reserveLink span {
-        font-size: 2rem;
-        padding-left: 5rem;
-        font-weight: 600;
-    }
+  .mainReserve
+    .reserveBottom
+    .reserveBox
+    .reserveLink
+    .reserveImg
+    .pcReserveImg {
+    display: none;
+  }
 
-    /* mainExhibit */
-    .mainExhibit .mainExhibitInner {
-        flex-direction: column;
-        padding: 4.6rem 2rem 5.6rem;
-        gap: 4.5rem;
-    }
+  .mainReserve
+    .reserveBottom
+    .reserveBox
+    .reserveLink
+    .reserveImg
+    .mobileReserveImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .mainExhibit .exhibitArea .sectionHeader .sectionTitle,
-    .mainExhibit .educationArea .sectionHeader .sectionTitle {
-        font-size: 2.9rem;
-    }
+  .mainReserve .reserveBottom .reserveBox .reserveLink span {
+    font-size: 2rem;
+    padding-left: 5rem;
+    font-weight: 600;
+  }
 
-    .mainExhibit .exhibitArea .sectionHeader,
-    .mainExhibit .educationArea .sectionHeader {
-        margin-bottom: 3.1rem;
-    }
+  /* mainExhibit */
+  .mainExhibit .mainExhibitInner {
+    flex-direction: column;
+    padding: 4.6rem 2rem 5.6rem;
+    gap: 4.5rem;
+  }
 
-    .mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .labelGroup .label,
-    .mainExhibit .educationArea .educationSlider .contentCard .cardInfo .labelGroup .label {
-        height: 2.8rem;
-        line-height: 2.6rem;
-        font-size: 1.4rem;
-        padding: 0 1.3rem;
-    }
+  .mainExhibit .exhibitArea .sectionHeader .sectionTitle,
+  .mainExhibit .educationArea .sectionHeader .sectionTitle {
+    font-size: 2.9rem;
+  }
 
-    .mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .cardTitle,
-    .mainExhibit .educationArea .educationSlider .contentCard .cardInfo .cardTitle {
-        font-size: 1.5rem;
-        letter-spacing: 0;
-        margin-top: 1.6rem;
-        margin-bottom: 0.6rem;
-    }
+  .mainExhibit .exhibitArea .sectionHeader,
+  .mainExhibit .educationArea .sectionHeader {
+    margin-bottom: 3.1rem;
+  }
 
-    .mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .cardDate,
-    .mainExhibit .educationArea .educationSlider .contentCard .cardInfo .cardDate {
-        font-size: 1.4rem;
-    }
+  .mainExhibit
+    .exhibitArea
+    .exhibitSlider
+    .contentCard
+    .cardInfo
+    .labelGroup
+    .label,
+  .mainExhibit
+    .educationArea
+    .educationSlider
+    .contentCard
+    .cardInfo
+    .labelGroup
+    .label {
+    height: 2.8rem;
+    line-height: 2.6rem;
+    font-size: 1.4rem;
+    padding: 0 1.3rem;
+  }
 
-    /* mainNotice */
-    .mainNotice {
-        max-width: 100%;
-        padding: 0 2rem;
-        margin-top: 3.9rem;
-    }
+  .mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .cardTitle,
+  .mainExhibit
+    .educationArea
+    .educationSlider
+    .contentCard
+    .cardInfo
+    .cardTitle {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
 
-    .mainNotice .noticeWrap {
-        flex-direction: column;
-    }
+  .mainExhibit .exhibitArea .exhibitSlider .contentCard .cardInfo .cardDate,
+  .mainExhibit
+    .educationArea
+    .educationSlider
+    .contentCard
+    .cardInfo
+    .cardDate {
+    font-size: 1.4rem;
+  }
 
-    .mainNotice .noticeWrap .noticeMainCard {
-        width: 100%;
-        height: 22.9rem;
-        background-position: right 2.8rem top 2.8rem;
-        padding: 2.8rem 3.6rem 3rem 2.9rem;
-    }
+  /* mainNotice */
+  .mainNotice {
+    max-width: 100%;
+    padding: 0 2rem;
+    margin-top: 3.9rem;
+  }
 
-    .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeTitle {
-        font-size: 0.938rem;
-        line-height: 1.22;
-        letter-spacing: -0.3px;
-    }
+  .mainNotice .noticeWrap {
+    flex-direction: column;
+  }
 
-    .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeDesc {
-        font-size: 0.875rem;
-        line-height: 1.36;
-        -webkit-line-clamp: 4;
-        padding-top: 2.1rem;
-    }
+  .mainNotice .noticeWrap .noticeMainCard {
+    width: 100%;
+    height: 22.9rem;
+    background-position: right 2.8rem top 2.8rem;
+    padding: 2.8rem 3.6rem 3rem 2.9rem;
+  }
 
-    .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeDate {
-        font-size: 0.875rem;
-        padding-top: 2rem;
-    }
+  .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeTitle {
+    font-size: 0.938rem;
+    line-height: 1.22;
+    letter-spacing: -0.3px;
+  }
 
-    .mainNotice .noticeWrap .noticeList {
-        grid-template-columns: 1fr;
-        margin-left: 0;
-        column-gap: 3rem;
-        width: 100%;
-        padding-left: 0;
-    }
+  .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeDesc {
+    font-size: 0.875rem;
+    line-height: 1.36;
+    -webkit-line-clamp: 4;
+    padding-top: 2.1rem;
+  }
 
-    .mainNotice .noticeWrap .noticeList .noticeItem {
-        width: 100%;
-        margin-left: 0;
-        padding: 2.8rem 0 2rem;
-        background-position: right 0 bottom 2rem;
-    }
+  .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeDate {
+    font-size: 0.875rem;
+    padding-top: 2rem;
+  }
 
-    .mainNotice .noticeWrap .noticeList .noticeItem:first-child {
-        border-top: none;
-    }
+  .mainNotice .noticeWrap .noticeList {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    column-gap: 3rem;
+    width: 100%;
+    padding-left: 0;
+  }
 
-    .mainNotice .noticeWrap .noticeList .noticeItem .text {
-        padding-right: 3rem;
-    }
+  .mainNotice .noticeWrap .noticeList .noticeItem {
+    width: 100%;
+    margin-left: 0;
+    padding: 2.8rem 0 2rem;
+    background-position: right 0 bottom 2rem;
+  }
 
-    .mainNotice .noticeWrap .noticeList .noticeItem .text .title {
-        font-size: 0.938rem;
-        min-height: unset;
-        letter-spacing: -0.3px;
-        line-height: 1.3;
-    }
+  .mainNotice .noticeWrap .noticeList .noticeItem:first-child {
+    border-top: none;
+  }
 
-    .mainNotice .noticeWrap .noticeList .noticeItem .text .date {
-        font-size: 0.875rem;
-        line-height: 1.3;
-        padding-top: 1.3rem;
-        letter-spacing: -0.3px;
-    }
+  .mainNotice .noticeWrap .noticeList .noticeItem .text {
+    padding-right: 3rem;
+  }
 
-    /* mainSns */
-    .mainSns {
-        margin: 6.1rem auto 9.1rem;
-    }
+  .mainNotice .noticeWrap .noticeList .noticeItem .text .title {
+    font-size: 0.938rem;
+    min-height: unset;
+    letter-spacing: -0.3px;
+    line-height: 1.3;
+  }
 
-    .mainSns .sectionTitle {
-        font-size: 2.9rem;
-        word-break: keep-all;
-        letter-spacing: -0.5px;
-        line-height: 1.24;
-        margin-bottom: 3.6rem;
-    }
+  .mainNotice .noticeWrap .noticeList .noticeItem .text .date {
+    font-size: 0.875rem;
+    line-height: 1.3;
+    padding-top: 1.3rem;
+    letter-spacing: -0.3px;
+  }
 
-    .mainSns .snsList {
-        flex-wrap: wrap;
-        gap: 2.3rem;
-        justify-content: center;
-    }
+  /* mainSns */
+  .mainSns {
+    margin: 6.1rem auto 9.1rem;
+  }
 
-    .mainSns .snsList li a img {
-        width: 3.2rem;
-        height: 3.2rem;
-    }
+  .mainSns .sectionTitle {
+    font-size: 2.9rem;
+    word-break: keep-all;
+    letter-spacing: -0.5px;
+    line-height: 1.24;
+    margin-bottom: 3.6rem;
+  }
 
-    .mainSns .snsList li a span {
-        font-size: 1.3rem;
-    }
+  .mainSns .snsList {
+    flex-wrap: wrap;
+    gap: 2.3rem;
+    justify-content: center;
+  }
+
+  .mainSns .snsList li a img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .mainSns .snsList li a span {
+    font-size: 1.3rem;
+  }
 }
 
 /* 768px */
 @media all and (max-width: 768px) {
-    .mainVisual .controlBox {
-        bottom: 0.9rem;
-    }
+  .mainVisual .controlBox {
+    bottom: 0.9rem;
+  }
 
-    .mainVisual .controlBox .mainVisualPagination .swiper-pagination-bullet {
-        width: 1.6rem;
-        height: 1.6rem;
-        margin: 0 0.5rem;
-    }
+  .mainVisual .controlBox .mainVisualPagination .swiper-pagination-bullet {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 0.5rem;
+  }
 
-    .mainVisual .controlBox .mainVisualPagination .swiper-pagination-bullet-active {
-        width: 1.6rem;
-    }
+  .mainVisual
+    .controlBox
+    .mainVisualPagination
+    .swiper-pagination-bullet-active {
+    width: 1.6rem;
+  }
 }

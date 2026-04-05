@@ -2,141 +2,141 @@
    4. mainNotice - 알려드려요 섹션
 ============================================================ */
 .mainNotice {
-    max-width: var(--container);
-    position: relative;
-    margin: 5.4rem auto 0;
+  max-width: var(--container);
+  position: relative;
+  margin: 5.4rem auto 0;
 }
 
 .mainNotice .sectionTitle {
-    font-size: 4.6rem;
-    color: var(--black);
-    letter-spacing: -1.2px;
-    vertical-align: middle;
-    margin-bottom: 3.4rem;
-    font-weight: 600;
+  font-size: 4.6rem;
+  color: var(--black);
+  letter-spacing: -1.2px;
+  vertical-align: middle;
+  margin-bottom: 3.4rem;
+  font-weight: 600;
 }
 
 /* noticeWrap */
 .mainNotice .noticeWrap {
-    display: flex;
-    gap: 0;
+  display: flex;
+  gap: 0;
 }
 
 /* noticeMainCard */
 .mainNotice .noticeWrap .noticeMainCard {
-    flex-shrink: 0;
-    width: 50rem;
-    height: 27.8rem;
-    background-color: var(--gray-bg);
-    padding: 3.6rem 6rem 4rem 4rem;
-    background-repeat: no-repeat;
-    background-position: right 1.8rem top 1.8rem;
-    background-image: url(/image/ico_main_notice.png);
-    box-sizing: border-box;
-    position: relative;
+  flex-shrink: 0;
+  width: 50rem;
+  height: 27.8rem;
+  background-color: var(--gray-bg);
+  padding: 3.6rem 6rem 4rem 4rem;
+  background-repeat: no-repeat;
+  background-position: right 1.8rem top 1.8rem;
+  background-image: url(/image/ico_main_notice.png);
+  box-sizing: border-box;
+  position: relative;
 }
 
 .mainNotice .noticeWrap .noticeMainCard .noticeMainInner {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeTitle {
-    color: var(--black);
-    display: block;
-    word-break: keep-all;
-    font-size: 1.8rem;
-    line-height: 1.45;
-    letter-spacing: -0.1px;
-    font-weight: 600;
+  color: var(--black);
+  display: block;
+  word-break: keep-all;
+  font-size: 1.8rem;
+  line-height: 1.45;
+  letter-spacing: -0.1px;
+  font-weight: 600;
 }
 
 .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeDesc {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-top: 1.7rem;
-    font-size: 1.6rem;
-    color: var(--gray-main);
-    letter-spacing: -0.2px;
-    line-height: 1.6;
-    text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 1.7rem;
+  font-size: 1.6rem;
+  color: var(--gray-main);
+  letter-spacing: -0.2px;
+  line-height: 1.6;
+  text-decoration: none;
 }
 
 .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeDesc:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .mainNotice .noticeWrap .noticeMainCard .noticeMainInner .noticeDate {
-    display: inline-block;
-    padding-top: 3.7rem;
-    font-size: 1.6rem;
-    color: var(--gray-darker);
-    letter-spacing: -0.2px;
-    margin-top: auto;
+  display: inline-block;
+  padding-top: 3.7rem;
+  font-size: 1.6rem;
+  color: var(--gray-darker);
+  letter-spacing: -0.2px;
+  margin-top: auto;
 }
 
 .mainNotice .noticeWrap .noticeMainCard .noticePin {
-    display: none;
+  display: none;
 }
 
 /* noticeList */
 .mainNotice .noticeWrap .noticeList {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex: 1;
-    margin-left: 3rem;
-    column-gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 1;
+  margin-left: 3rem;
+  column-gap: 3rem;
 }
 
 .mainNotice .noticeWrap .noticeList .noticeItem {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 2.5rem 0 4.1rem;
-    border-top: 2px solid var(--gray-light);
-    background-repeat: no-repeat;
-    background-position: right 1rem bottom 4rem;
-    background-image: url(/image/ico_main_notice_arrow.png);
-    cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2.5rem 0 4.1rem;
+  border-top: 2px solid var(--gray-light);
+  background-repeat: no-repeat;
+  background-position: right 1rem bottom 4rem;
+  background-image: url(/image/ico_main_notice_arrow.png);
+  cursor: pointer;
 }
 
 .mainNotice .noticeWrap .noticeList .noticeItem .text {
-    flex: 1;
-    padding-right: 12.5rem;
+  flex: 1;
+  padding-right: 12.5rem;
 }
 
 .mainNotice .noticeWrap .noticeList .noticeItem .text .title {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.8rem;
-    letter-spacing: -0.2px;
-    font-weight: 600;
-    line-height: 1.42;
-    min-height: 5.2rem;
-    text-decoration: none;
-    color: var(--gray-darkest);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.8rem;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+  line-height: 1.42;
+  min-height: 5.2rem;
+  text-decoration: none;
+  color: var(--gray-darkest);
 }
 
 .mainNotice .noticeWrap .noticeList .noticeItem .text .title:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .mainNotice .noticeWrap .noticeList .noticeItem .text .date {
-    display: block;
-    font-size: 1.6rem;
-    color: var(--gray-main);
-    letter-spacing: -0.2px;
-    padding-top: 1.9rem;
-    line-height: 1.3;
+  display: block;
+  font-size: 1.6rem;
+  color: var(--gray-main);
+  letter-spacing: -0.2px;
+  padding-top: 1.9rem;
+  line-height: 1.3;
 }
 
 .mainNotice .noticeWrap .noticeList .noticeItem > img {
-    display: none;
+  display: none;
 }
